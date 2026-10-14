@@ -1,0 +1,427 @@
+# Acoustic Speech Biomarkers for Early Alzheimer's Detection
+# Central configuration. All paths, thresholds and parameters live here.
+# Every script under src/Step*/ reads this file through src/common/config.py.
+#
+# Values were transferred verbatim from features.ipynb; nothing was retuned.
+# Seeds that did not exist in the notebook are marked with "added explicitly".
+
+# ---------------------------------------------------------------------------
+# Reproducibility
+# ---------------------------------------------------------------------------
+seed: 42                      # notebook RANDOM_STATE (cells 16-21)
+# This is the only seed the pipeline needs: it feeds StratifiedKFold, every
+# estimator's random_state, permutation_importance and the SHAP sample draw.
+# The notebook's other random operations (plot jitter, cohort sampling) live
+# only in archived code. See docs/open_questions.md (Q10).
+
+# ---------------------------------------------------------------------------
+# Cohort membership
+# ---------------------------------------------------------------------------
+cohort:
+  id_column: 'ID'             # column of the shared cohort CSV that lists the recording IDs
+
+# ---------------------------------------------------------------------------
+# Stage 1: cohort check, frozen splits, evaluation and the encoder baselines
+# (src/Step1_Dataset/Step1c_*, src/Step7_Evaluation, src/Step8_Encoders)
+# ---------------------------------------------------------------------------
+# These scripts used to carry absolute Windows paths at the top of each file. They
+# read everything from here now. Inputs that already have a key under `paths:` are
+# not repeated: the cohort CSV is paths.cohort, metadata.csv is paths.metadata and the
+# audio is paths.raw_audio.train and .test.
+#
+# Everything the Stage 1 scripts WRITE sits under work_dir, which is gitignored
+# (data/interim/*): inclusion list, frozen splits, embeddings, segment tensors,
+# predictions and metric tables. None of it belongs in the repository.
+# To keep it elsewhere, override work_dir (or any single key) in config.local.yaml.
+stage1:
+  work_dir: 'data/interim/stage1'
+  data_check_dir: 'data/interim/stage1'
+  inclusion_list: 'data/interim/stage1/cookie_theft_inclusion_list.csv'
+  splits_dir: 'data/interim/stage1/splits'
+  embeddings_dir: 'data/interim/stage1/embeddings'
+  speechcare_data_dir: 'data/interim/stage1/speechcare_data'
+  predictions_dir: 'data/interim/stage1/predictions'
+  results_dir: 'data/interim/stage1/results'
+
+  # Pause-annotated BERT (Li et al., arXiv:2506.11119). Every value says where it comes from:
+  # "paper" = stated in the paper, "ours" = our choice because the paper does not say.
+  pause_bert:
+    # The transcripts, the forced alignment and its QC come from the shared mfa: section below
+    # (Step9_Forced_Alignment). Only what is specific to this baseline is set here.
+    annotated_csv: 'data/interim/stage1/pause_bert/pause_annotated_text.csv'
+    embeddings_dir: 'data/interim/stage1/pause_bert/embeddings'
+
+    # --- pause annotation (the word tier and the <unk> limit are under mfa:) ---
+    pause_threshold_s: 0.05              # paper: a gap longer than this gets a marker
+    short_below_s: 0.5                   # paper: short is under 0.5 s
+    long_above_s: 2.0                    # paper: long is over 2 s, medium is 0.5 to 2 s
+    boundary_is_medium: true             # ours: a gap of exactly 0.5 s or 2.0 s counts as medium (paper silent)
+    markers: {short: ',', medium: '.', long: '...'}   # paper: comma, period, ellipsis
+    mark_before_first_word: false        # ours (paper silent)
+    mark_after_last_word: false          # ours (paper silent)
+
+    # --- classifier ---
+    bert_checkpoint: 'bert-base-uncased' # paper
+    max_length: 512                      # paper: padded or truncated to 512 tokens
+    embedding: 'cls'                     # ours: the paper gives only the 768 dimensions. 'cls' or 'mean'.
+    hidden_units: 128                    # paper: a single feed-forward layer of 128
+    learning_rate: 0.0005                # paper: Adam, 0.0005
+    batch_size: 32                       # paper
+    max_epochs: 100                      # paper
+    patience: 5                          # paper: stop after 5 epochs without validation-loss improvement
+    inner_val_fraction: 0.20             # paper: 20% of the training set used for validation
+    scheduler_factor: 0.1                # ours: the paper names ReduceLROnPlateau and no parameters (PyTorch default)
+    scheduler_patience: 10               # ours: PyTorch default
+    on_alignment_failure: 'error'        # ours: 'error' stops and lists the IDs, 'exclude' drops and reports them
+    seed: 42
+
+# ---------------------------------------------------------------------------
+# Step9_Forced_Alignment: Montreal Forced Aligner (MFA) corpus, alignment, QC and fluency
+# ---------------------------------------------------------------------------
+# One alignment of the cohort feeds two consumers: the pause-annotated BERT baseline
+# (Step8_Encoders/pause_bert) and the MFA fluency biomarkers (Step9d). Everything the stage
+# writes sits under work_dir, which is gitignored (data/interim/*).
+# MFA is installed separately with conda and is not a Python dependency of this repository.
+# Point `executable` at it in config.local.yaml, or leave it null when `mfa` is on the PATH.
+mfa:
+  executable: null                      # e.g. 'C:/Users/me/miniconda3/envs/mfa_env/Scripts/mfa.exe'
+  work_dir: 'data/interim/mfa'
+  corpus_dir: 'data/interim/mfa/corpus'              # 9a output: <ID>.wav + <ID>.txt
+  textgrid_dir: 'data/interim/mfa/textgrids'         # 9b output: <ID>.TextGrid
+  input_report: 'data/interim/mfa/input_report.md'   # 9a report
+  qc_csv: 'data/interim/mfa/alignment_qc.csv'        # 9c output, one row per recording
+  qc_report: 'data/interim/mfa/alignment_qc.md'
+
+  # --- 9a: corpus preparation ---
+  text_column: 'text'                   # transcript column of the cohort CSV
+  sample_rate: 16000                    # ours: MFA models are 16 kHz
+  min_words_report: 10                  # ours: transcripts shorter than this are listed in the report
+
+  # --- 9b: alignment ---
+  acoustic_model: 'english_us_arpa'
+  dictionary: 'english_us_arpa'
+  num_jobs: 6
+  single_speaker: true                  # there is no speaker information
+  clean: true                           # discard the cache of a previous run
+  output_format: 'long_textgrid'        # the format common/mfa.py and Step9d read
+  beam: 100                             # MFA default is 10. With the defaults 8 of 20 trial recordings could not be aligned; with 100 and 400 all 20 were.
+  retry_beam: 400                       # MFA default is 40. null for either key means: use MFA's own default.
+  # `mfa validate` is not used: with an acoustic model it also trains a monophone model on the
+  # corpus, which costs as much as a small alignment and is not needed to align.
+
+  # --- 9c: alignment QC (also applied by pause_bert/01) ---
+  word_tier: 'words'                    # the word tier of the TextGrid (checked on the trial: MFA 3.3.9 writes 'words' and 'phones')
+  phone_tier: 'phones'                  # a word whose phones are all 'spn' is not in MFA's dictionary and counts as <unk>
+  max_unk_fraction: 0.20                # ours: more than this share of <unk> words makes alignment_ok = 0
+
+  # --- 9d: fluency biomarkers, after the extractor supplied by the supervisor ---
+  fluency:
+    output_dir: 'data/interim/mfa/fluency'
+    pause_thresholds_s: [0.25, 0.50, 1.00, 2.00]   # supervisor's script: one set of pause features per threshold
+    run_pause_threshold_s: 0.25                    # supervisor's script: a gap this long ends a speech run
+    # Hesitation tokens, grouped. The group names are the supervisor's (his data is German, where
+    # "ae" is "aeh"); here "ae_hes" is the "uh" type and "aehm_hes" the "um" type. Tokens are
+    # compared in lower case, with leading and trailing punctuation removed. "ah" and "oh" are
+    # interjections, not hesitations, and are left out. Add a token here to count it.
+    hesitations:
+      ae_hes: ['uh', 'uhh', 'eh', 'er']
+      aehm_hes: ['um', 'umm', 'uhm', 'uhmm', 'erm']
+      hm_hes: ['hm', 'hmm', 'hmmm', 'mm', 'mmm']
+      mhm_hes: ['mhm', 'mhmm', 'mhmmm']
+
+# ---------------------------------------------------------------------------
+# Paths
+# ---------------------------------------------------------------------------
+paths:
+  # All paths are RELATIVE TO THE REPOSITORY ROOT, so a fresh clone runs
+  # without anyone editing this file. An absolute path is also accepted and is
+  # passed through untouched. To point at data held elsewhere without changing
+  # this shared file, create config.local.yaml (gitignored) and override only
+  # the keys you need; see common/config.py.
+  #
+  # data/raw/ is NOT in the repository: see data/README.md for how to obtain
+  # the audio and metadata.
+
+  metadata: 'data/raw/metadata.csv'
+
+  # The shared cohort file supplied by the supervisor (Cookie Theft cohort, 1,031 recordings).
+  # Its ID column is the authoritative list of which recordings belong to the cohort.
+  # Not committed; place it under data/raw/ (see data/README.md).
+  cohort: 'data/raw/PREPARE_English_complete_COOKIE_THEFT.csv'
+
+  raw_audio:
+    train: 'data/raw/train_audios'
+    test: 'data/raw/test_audios'
+
+  # Step1b_Audio_Preprocessing - standalone audio cleaning stage.
+  # NOTE: neither extractor reads preprocessed_dir; both read raw_audio
+  # directly, exactly as the notebook did. See docs/open_questions.md (Q11).
+  preprocess:
+    input_dir: 'data/raw/train_audios'
+    output_dir: 'data/interim/preprocessed_audio'
+
+  # Step2b extract_recording_level.py output root -> {split}/{cn,ad}/features.csv
+  features_dir: 'data/interim/features_recording'
+
+  # Step6a-Step6d shared working directory, recording level
+  processed_dir: 'data/processed/recording'
+
+  # Committed artefacts
+  docs_dir: 'docs'
+  data_dir: 'data/metadata'
+  results_dir: 'data/results'
+
+# ---------------------------------------------------------------------------
+# Step1b_Audio_Preprocessing/preprocess.py: band-pass filtering + peak normalization
+# ---------------------------------------------------------------------------
+preprocess:
+  lowcut_hz: 75.0             # removes low-frequency mechanical rumble
+  highcut_hz: 8000.0          # removes high-frequency electronic hiss
+  filter_order: 4             # Butterworth order
+  max_normalized_freq: 0.999  # clamp for highcut/nyquist on low-SR files
+  resample_to: null           # null = keep the original sample rate (notebook cell 22)
+  peak_normalize: true
+  output_ext: '.wav'
+  input_globs: ['*.wav', '*.mp3']
+
+# ---------------------------------------------------------------------------
+# common/vad.py: WebRTC voice activity detection & pause statistics
+# ---------------------------------------------------------------------------
+vad:
+  sample_rate: 16000
+  aggressiveness: 2           # webrtcvad 0-3; 2 = moderate, good for noisy recordings
+  frame_ms: 20
+  min_silence_frames: 5       # 5 x 20ms = 100ms minimum to count as a pause
+  min_speech_frames: 2        # 2 x 20ms = 40ms  minimum to count as speech
+  long_pause_threshold_s: 0.5 # split between long_pause_count and short_pause_count
+
+# ---------------------------------------------------------------------------
+# Step2b_Feature_Extraction (both levels): the 135 acoustic features
+# ---------------------------------------------------------------------------
+features:
+  audio_exts: ['.wav', '.mp3', '.flac', '.m4a']
+  target_sr: 16000            # librosa load rate for the signal-domain features
+
+  metadata_filters:
+    language: 'english'
+    splits: ['train', 'test']
+    control_labels: ['Control']
+    ad_labels: ['ProbableAD', 'AD']
+
+  pitch:
+    floor_hz: 75
+    ceiling_hz: 600
+
+  intensity:
+    minimum_pitch_hz: 75
+
+  energy:
+    frame_length: 512
+    hop_length: 256
+
+  articulation:
+    seconds_per_syllable: 0.15    # ~150ms average syllable duration
+    silence_threshold_db: -35     # Praat "To TextGrid (silences)" arguments
+    min_silent_interval_s: 0.25
+    min_sounding_interval_s: 0.1
+
+  formant:
+    time_step: 0.02
+    max_number_of_formants: 5
+    maximum_formant_hz: 5500
+    window_length: 0.025
+    pre_emphasis_from_hz: 50
+    speed_of_sound: 34300         # cm/s, used for vocal tract length
+
+  voice_quality:
+    window_s: 1.0
+    hop_s: 0.5
+    min_points: 4                 # minimum PointProcess points per window
+    period_floor: 0.0001
+    period_ceiling: 0.02
+    max_period_factor: 1.3
+    max_amplitude_factor: 1.6
+    harmonicity_time_step: 0.01
+    harmonicity_minimum_pitch: 75
+    hnr_floor_db: -200            # discard Praat's undefined sentinel values
+
+  mfcc:
+    n_mfcc: 13
+
+  spectral_shape:
+    n_fft: 1024
+    hop_length: 256
+    alpha_low_band: [50, 1000]
+    alpha_high_band: [1000, 5000]
+    hammarberg_low_band: [0, 2000]
+    hammarberg_high_band: [2000, 5000]
+    slope_bands:
+      spectral_slope_0_500: [0, 500]
+      spectral_slope_500_1500: [500, 1500]
+    epsilon: 1.0e-10
+
+# ---------------------------------------------------------------------------
+# Step6a_Build_Matrix/build_matrix_recording.py: merge, impute, scale
+# ---------------------------------------------------------------------------
+matrix:
+  label_map:
+    cn: 0
+    ad: 1
+  max_missing_fraction: 0.3   # drop a feature if >30% missing in train
+  scaler: 'robust'            # RobustScaler, fitted on train only
+
+# ---------------------------------------------------------------------------
+# Step6b_Feature_Selection/feature_selection_recording.py: 135 -> 29 features
+# ---------------------------------------------------------------------------
+selection:
+  significance_alpha: 0.05
+  effect_size_large: 0.5      # reporting only
+  effect_size_medium: 0.3     # reporting only
+  d_threshold: 0.2            # minimum |Cohen's d| to enter the candidate pool
+  corr_threshold: 0.85        # above this, the weaker-d feature is pruned
+  report_top_n: 30
+
+# ---------------------------------------------------------------------------
+# Step6c_Train_Evaluate/train_evaluate_recording.py: cross-validation and final model
+# ---------------------------------------------------------------------------
+train:
+  n_folds: 5
+  shuffle: true
+  default_threshold: 0.5
+  final_model: 'svm_rbf'
+  models:
+    logistic_regression:
+      max_iter: 1000
+      class_weight: 'balanced'
+    svm_linear:
+      class_weight: 'balanced'
+      probability: true
+    svm_rbf:
+      class_weight: 'balanced'
+      probability: true
+    random_forest:
+      n_estimators: 300
+      class_weight: 'balanced'
+
+# ---------------------------------------------------------------------------
+# Step6d_Interpret/interpret_recording.py: SHAP and permutation importance
+# ---------------------------------------------------------------------------
+interpret:
+  n_shap_samples: 150         # test rows explained with SHAP (speed vs completeness)
+  kmeans_background: 50       # compact SHAP reference set
+  permutation_repeats: 30
+  permutation_scoring: 'roc_auc'
+  top_n_plot: 20
+
+# ===========================================================================
+# SEGMENT-BASED PIPELINE  (the *_segment.py script in each step folder)
+# SET ASIDE after the supervisor's review: nothing in src/ reads the keys below any more.
+# They are kept because the scripts in archive/set_aside_after_review/ still do.
+# ---------------------------------------------------------------------------
+# Second, independent analysis variant, from features2.ipynb. It reuses the
+# same 135 feature definitions but computes them per 5-second segment and
+# classifies with a Random Forest, aggregating segment probabilities back to
+# recording level. Its parameters are deliberately kept separate from the
+# whole-recording ones above: several keys share a name (d_threshold,
+# corr_threshold, n_folds) but they are independent settings.
+# ===========================================================================
+segments:
+
+  paths:
+    # Step2b extract_segment_level.py output root
+    features_dir: 'data/interim/features_segment'
+    # Step6a-Step6d shared working directory, segment level
+    processed_dir: 'data/processed/segment'
+
+  # -- Step2b_Feature_Extraction/extract_segment_level.py ---------------------------------------
+  segmentation:
+    segment_len_s: 5.0        # analysis window length
+    hop_len_s: 3.75           # 25% overlap; matches SpeechCARE on PREPARE
+    min_segment_len_s: 3.0    # discard trailing segments shorter than this
+    n_jobs: -1                # joblib workers
+    backend: 'threading'
+    verbose: 5
+    # Suppressed in the notebook because 5 s windows make scipy's moment
+    # calculation numerically touchy. See docs/open_questions.md (Q22).
+    suppress_warning: 'Precision loss occurred in moment calculation'
+
+  # -- Step6a_Build_Matrix/build_matrix_segment.py ------------------------------------------
+  matrix:
+    label_map:
+      cn: 0
+      ad: 1
+    max_missing_fraction: 0.3
+    scaler: 'robust'
+    group_column: 'uid'       # recording id; NOT a participant id (Q16)
+    segment_column: 'segment_idx'
+
+  # -- Step6b_Feature_Selection/feature_selection_segment.py --------------------------------------
+  selection:
+    significance_alpha: 0.05
+    effect_size_large: 0.5
+    effect_size_medium: 0.3
+    d_threshold: 0.2
+    corr_threshold: 0.85
+    report_top_n: 30
+
+  # -- Step6c_Train_Evaluate/train_evaluate_segment.py -----------------------------------------
+  train:
+    n_folds: 5
+    shuffle: true
+    final_model: 'random_forest'
+    aggregation: 'mean'       # segment probabilities -> recording probability
+    models:
+      logistic_regression:
+        max_iter: 1000
+        class_weight: 'balanced'
+      svm_linear:
+        class_weight: 'balanced'
+        probability: true
+      svm_rbf:
+        class_weight: 'balanced'
+        probability: true
+      random_forest:
+        n_estimators: 300
+        class_weight: 'balanced'
+
+  # -- Step6d_Interpret/interpret_segment.py ----------------------------------------------
+  interpret:
+    permutation_repeats: 15
+    top_n_plot: 25
+
+# ---------------------------------------------------------------------------
+# Reporting / documentation generators (Step1a, Step3a, Step3b)
+# ---------------------------------------------------------------------------
+reporting:
+  # Step1a_Recording_Metadata/build_recording_metadata.py
+  recording_metadata_file: 'recording_metadata.csv'
+  # Columns copied through from metadata.csv into the recording-level table
+  metadata_passthrough: ['uid', 'corpus', 'split', 'diagnosis', 'age', 'gender',
+                         'education', 'race', 'handedness', 'language', 'filesize_kb']
+  # Heuristic used ONLY to estimate how often two recordings could belong to
+  # the same participant. It is NOT a participant identifier. See Q23.
+  participant_proxy_keys: ['corpus', 'age', 'gender', 'diagnosis']
+
+  # Step3a_Feature_Inventory/build_inventory.py
+  feature_inventory_csv: 'feature_inventory.csv'
+  feature_inventory_md: 'feature_inventory.md'
+
+  # Step3b_Descriptive_Stats/descriptive_stats.py
+  descriptive_stats_recording: 'descriptive_stats_recording.csv'
+  descriptive_stats_segment: 'descriptive_stats_segment.csv'   # set aside, no longer written
+  descriptive_stats_md: 'descriptive_statistics.md'
+  # Descriptive statistics are reported on the RAW, unscaled feature tables so
+  # that units remain interpretable.
+  use_raw_features: true
+  decimals: 4
+
+# ---------------------------------------------------------------------------
+# Plot styling (carried over from the notebook figures)
+# ---------------------------------------------------------------------------
+plots:
+  figure_facecolor: '#0d1117'
+  axes_facecolor: '#111827'
+  spine_color: '#1e293b'
+  bar_color: '#60a5fa'
+  tick_color: '#94a3b8'
+  dpi: 150

@@ -1,0 +1,56 @@
+# Audio and large feature tables never enter the repository.
+# See data/README.md for how to obtain them.
+data/raw/*
+data/interim/*
+data/processed/*
+
+# Keep the directories themselves, so a fresh clone has somewhere to put data.
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# Gold-standard reference transcripts are small, hand-checked, and needed to
+# run the Step 4 evaluation, so they are versioned.
+!data/raw/gold_transcripts/
+!data/raw/gold_transcripts/**
+
+# Personal path overrides (see common/config.py and data/README.md)
+config.local.yaml
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Whisper large-v3 (2.9 GB). Downloaded by the person running the pipeline.
+# See models/README.md.
+models/*
+!models/README.md
+
+# Local editor settings
+.vscode/
+.idea/
+
+# Audio, wherever it sits. The recordings are not ours to redistribute.
+*.wav
+*.mp3
+*.flac
+*.m4a
+
+# Embeddings, tensors and model weights
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# Model output. Predictions and metric tables are regenerated, never committed.
+# data/results/ is the one exception: it holds small committed result tables.
+predictions/
+results/
+!/data/results/
+!/archive/**/results/
+
+# Archives of data or code arrive by hand and are not part of the repository
+*.zip

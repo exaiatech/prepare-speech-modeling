@@ -1,0 +1,811 @@
+partition,feature,diagnostic_class,n,n_missing,mean,std,min,max,mean_diff_ad_minus_cn,cohens_d,order,domain,unit
+all,f0_mean,AD,3629,0,183.9164,56.5321,84.8425,518.6033,-6.576,-0.1138,1,prosodic,Hz
+all,f0_mean,CN,6659,0,190.4924,59.0489,79.3815,510.3846,-6.576,-0.1138,1,prosodic,Hz
+all,f0_std,AD,3629,0,76.7957,45.7014,4.014,225.8962,-9.5819,-0.2027,2,prosodic,Hz
+all,f0_std,CN,6659,0,86.3776,48.8024,1.734,236.1731,-9.5819,-0.2027,2,prosodic,Hz
+all,f0_min,AD,3629,0,93.5895,26.4661,74.9211,351.9799,-0.4034,-0.0158,3,prosodic,Hz
+all,f0_min,CN,6659,0,93.9929,24.5641,74.9068,288.6582,-0.4034,-0.0158,3,prosodic,Hz
+all,f0_max,AD,3629,0,466.4251,152.0637,106.4248,599.9975,-29.7574,-0.2042,4,prosodic,Hz
+all,f0_max,CN,6659,0,496.1825,139.1293,93.817,599.9987,-29.7574,-0.2042,4,prosodic,Hz
+all,f0_kurtosis,AD,3629,0,10.3469,17.5631,-1.9515,290.5748,-0.1402,-0.0078,5,prosodic,dimensionless
+all,f0_kurtosis,CN,6659,0,10.4871,18.377,-1.977,251.8291,-0.1402,-0.0078,5,prosodic,dimensionless
+all,f0_skewness,AD,3629,0,2.1053,2.1796,-3.4769,16.8573,-0.1525,-0.0714,6,prosodic,dimensionless
+all,f0_skewness,CN,6659,0,2.2578,2.0942,-3.2908,14.8444,-0.1525,-0.0714,6,prosodic,dimensionless
+all,f0_std_norm,AD,3629,0,0.4142,0.2185,0.0345,1.0504,-0.0327,-0.1498,7,prosodic,dimensionless
+all,f0_std_norm,CN,6659,0,0.4469,0.2181,0.016,1.1126,-0.0327,-0.1498,7,prosodic,dimensionless
+all,intensity_mean,AD,3629,0,48.5908,11.5724,17.971,77.3311,-2.182,-0.1964,8,intensity/energy,dB SPL (Praat scale)
+all,intensity_mean,CN,6659,0,50.7728,10.6277,-18.6122,82.8802,-2.182,-0.1964,8,intensity/energy,dB SPL (Praat scale)
+all,intensity_std,AD,3629,0,7.9552,3.2525,1.3174,18.866,0.8165,0.1937,9,intensity/energy,dB SPL (Praat scale)
+all,intensity_std,CN,6659,0,7.1387,4.9971,1.047,134.0794,0.8165,0.1937,9,intensity/energy,dB SPL (Praat scale)
+all,intensity_min,AD,3629,0,32.3287,12.4067,2.7563,69.0509,-1.3197,-0.081,10,intensity/energy,dB SPL (Praat scale)
+all,intensity_min,CN,6659,0,33.6484,19.4233,-300.0,69.3934,-1.3197,-0.081,10,intensity/energy,dB SPL (Praat scale)
+all,intensity_max,AD,3629,0,65.6772,10.3517,33.2985,92.5658,0.1351,0.0133,11,intensity/energy,dB SPL (Praat scale)
+all,intensity_max,CN,6659,0,65.5421,10.0353,22.6597,92.2654,0.1351,0.0133,11,intensity/energy,dB SPL (Praat scale)
+all,intensity_kurtosis,AD,3629,0,-0.4984,0.8746,-1.7463,13.2104,-0.2628,-0.2187,12,intensity/energy,dimensionless
+all,intensity_kurtosis,CN,6659,0,-0.2356,1.4569,-1.7721,48.8899,-0.2628,-0.2187,12,intensity/energy,dimensionless
+all,intensity_skewness,AD,3629,0,-0.0089,0.5059,-1.6902,3.4425,0.1368,0.2503,13,intensity/energy,dimensionless
+all,intensity_skewness,CN,6659,0,-0.1457,0.5845,-6.7337,2.6518,0.1368,0.2503,13,intensity/energy,dimensionless
+all,energy_mean,AD,3629,0,0.0188,0.0242,0.0002,0.2054,-0.0021,-0.0822,14,intensity/energy,normalised amplitude
+all,energy_mean,CN,6659,0,0.0209,0.0268,0.0001,0.3242,-0.0021,-0.0822,14,intensity/energy,normalised amplitude
+all,energy_std,AD,3629,0,0.0144,0.018,0.0002,0.1556,0.0,0.0,15,intensity/energy,normalised amplitude
+all,energy_std,CN,6659,0,0.0144,0.0201,0.0,0.2524,0.0,0.0,15,intensity/energy,normalised amplitude
+all,energy_min,AD,3629,0,0.0027,0.0045,0.0,0.0594,-0.0003,-0.072,16,intensity/energy,normalised amplitude
+all,energy_min,CN,6659,0,0.003,0.0038,0.0,0.0528,-0.0003,-0.072,16,intensity/energy,normalised amplitude
+all,energy_max,AD,3629,0,0.0751,0.0884,0.0009,0.7733,-0.0007,-0.0076,17,intensity/energy,normalised amplitude
+all,energy_max,CN,6659,0,0.0758,0.0957,0.0003,0.7778,-0.0007,-0.0076,17,intensity/energy,normalised amplitude
+all,energy_kurtosis,AD,3629,0,4.3745,7.2342,-1.5199,97.6569,0.9363,0.138,18,intensity/energy,dimensionless
+all,energy_kurtosis,CN,6659,0,3.4382,6.2999,-1.6547,79.4284,0.9363,0.138,18,intensity/energy,dimensionless
+all,energy_skewness,AD,3629,0,1.6688,1.0822,-0.5288,9.137,0.2648,0.2502,19,intensity/energy,dimensionless
+all,energy_skewness,CN,6659,0,1.404,1.0336,-0.967,8.0938,0.2648,0.2502,19,intensity/energy,dimensionless
+all,mean_pause_duration,AD,3629,0,0.3746,0.4199,0.0,4.98,0.0257,0.0614,20,temporal/fluency,s
+all,mean_pause_duration,CN,6659,0,0.3489,0.4172,0.0,4.98,0.0257,0.0614,20,temporal/fluency,s
+all,total_speech_time,AD,3629,0,3.4404,1.2294,0.08,5.0,-0.106,-0.0878,21,temporal/fluency,s
+all,total_speech_time,CN,6659,0,3.5464,1.1858,0.08,5.0,-0.106,-0.0878,21,temporal/fluency,s
+all,total_pause_time,AD,3629,0,1.4164,1.2015,0.0,4.98,0.11,0.0936,22,temporal/fluency,s
+all,total_pause_time,CN,6659,0,1.3064,1.1491,0.0,4.98,0.11,0.0936,22,temporal/fluency,s
+all,pause_percentage,AD,3629,0,29.1896,24.6322,0.0,99.9454,2.2055,0.0913,23,temporal/fluency,%
+all,pause_percentage,CN,6659,0,26.9841,23.6758,0.0,99.9569,2.2055,0.0913,23,temporal/fluency,%
+all,silence_to_speech_ratio,AD,3629,0,1.1287,3.7989,0.0,61.25,0.1187,0.0314,24,temporal/fluency,ratio
+all,silence_to_speech_ratio,CN,6659,0,1.01,3.7507,0.0,61.25,0.1187,0.0314,24,temporal/fluency,ratio
+all,pause_variability,AD,3629,0,0.1878,0.2303,0.0,2.04,0.0209,0.095,25,temporal/fluency,s
+all,pause_variability,CN,6659,0,0.1669,0.2094,0.0,2.22,0.0209,0.095,25,temporal/fluency,s
+all,number_of_pauses,AD,3629,0,3.7057,2.2716,0.0,11.0,0.093,0.0403,26,temporal/fluency,count
+all,number_of_pauses,CN,6659,0,3.6127,2.3399,0.0,15.0,0.093,0.0403,26,temporal/fluency,count
+all,number_of_speech_segments,AD,3629,0,4.2847,2.1121,0.0,12.0,0.0254,0.0118,27,temporal/fluency,count
+all,number_of_speech_segments,CN,6659,0,4.2593,2.1858,0.0,14.0,0.0254,0.0118,27,temporal/fluency,count
+all,max_pause_duration,AD,3629,0,0.6644,0.6627,0.0,4.98,0.0582,0.0904,28,temporal/fluency,s
+all,max_pause_duration,CN,6659,0,0.6062,0.6242,0.0,4.98,0.0582,0.0904,28,temporal/fluency,s
+all,min_pause_duration,AD,3629,0,0.1894,0.351,0.0,4.98,0.0057,0.0161,29,temporal/fluency,s
+all,min_pause_duration,CN,6659,0,0.1837,0.3587,0.0,4.98,0.0057,0.0161,29,temporal/fluency,s
+all,pause_rate,AD,3629,0,0.7638,0.4679,0.0,2.6533,0.0183,0.0386,30,temporal/fluency,pauses/s
+all,pause_rate,CN,6659,0,0.7455,0.4814,0.0,3.0,0.0183,0.0386,30,temporal/fluency,pauses/s
+all,mean_speech_segment_duration,AD,3629,0,1.2272,1.1997,0.08,5.0,-0.0787,-0.064,31,temporal/fluency,s
+all,mean_speech_segment_duration,CN,6659,0,1.3059,1.2585,0.06,5.0,-0.0787,-0.064,31,temporal/fluency,s
+all,std_speech_segment_duration,AD,3629,0,0.6195,0.5365,0.0,2.38,-0.0296,-0.0538,32,temporal/fluency,s
+all,std_speech_segment_duration,CN,6659,0,0.6491,0.5643,0.0,2.4,-0.0296,-0.0538,32,temporal/fluency,s
+all,mean_inter_pause_interval,AD,3629,0,0.6501,0.7242,0.0,4.46,0.0082,0.0112,33,temporal/fluency,s
+all,mean_inter_pause_interval,CN,6659,0,0.6419,0.7389,0.0,4.46,0.0082,0.0112,33,temporal/fluency,s
+all,std_inter_pause_interval,AD,3629,0,0.2249,0.3022,0.0,2.02,0.0068,0.0225,34,temporal/fluency,s
+all,std_inter_pause_interval,CN,6659,0,0.2181,0.301,0.0,1.96,0.0068,0.0225,34,temporal/fluency,s
+all,long_pause_count,AD,3629,0,0.7886,0.9956,0.0,5.0,0.0921,0.0947,35,temporal/fluency,count
+all,long_pause_count,CN,6659,0,0.6965,0.9489,0.0,5.0,0.0921,0.0947,35,temporal/fluency,count
+all,short_pause_count,AD,3629,0,2.9171,2.0659,0.0,11.0,0.0009,0.0004,36,temporal/fluency,count
+all,short_pause_count,CN,6659,0,2.9162,2.1231,0.0,14.0,0.0009,0.0004,36,temporal/fluency,count
+all,pause_duration_skewness,AD,3627,2,0.3652,0.5688,-1.4397,2.4723,0.0112,0.0199,37,temporal/fluency,dimensionless
+all,pause_duration_skewness,CN,6650,9,0.354,0.5578,-1.3794,2.3942,0.0112,0.0199,37,temporal/fluency,dimensionless
+all,speech_rate,AD,3629,0,3.6777,1.0488,0.3378,6.4,-0.1933,-0.1813,38,articulatory,syllables/s
+all,speech_rate,CN,6659,0,3.871,1.0831,0.2,6.5954,-0.1933,-0.1813,38,articulatory,syllables/s
+all,articulation_rate,AD,3629,0,3.8605,1.0048,0.3378,6.4897,-0.102,-0.0993,39,articulatory,syllables/s
+all,articulation_rate,CN,6659,0,3.9625,1.0493,0.2,6.5954,-0.102,-0.0993,39,articulatory,syllables/s
+all,avg_syllable_duration,AD,3629,0,0.2879,0.1388,0.1541,2.9606,-0.0008,-0.0044,40,articulatory,s
+all,avg_syllable_duration,CN,6659,0,0.2887,0.2139,0.1516,5.0,-0.0008,-0.0044,40,articulatory,s
+all,f1_std,AD,3629,0,363.1105,120.9294,72.5917,728.8119,-24.0944,-0.1969,41,articulatory,Hz
+all,f1_std,CN,6659,0,387.2049,123.8443,74.1365,785.7193,-24.0944,-0.1969,41,articulatory,Hz
+all,f2_std,AD,3629,0,467.277,85.6223,175.9378,733.2989,-10.4844,-0.1232,42,articulatory,Hz
+all,f2_std,CN,6659,0,477.7614,84.6029,198.774,881.214,-10.4844,-0.1232,42,articulatory,Hz
+all,vocal_tract_length,AD,3629,0,15.1634,2.4977,10.6639,45.6866,0.138,0.0665,43,articulatory,cm
+all,vocal_tract_length,CN,6659,0,15.0254,1.5387,9.8226,31.0954,0.138,0.0665,43,articulatory,cm
+all,jitter_local_mean,AD,3629,0,0.0352,0.0147,0.0101,0.1205,-0.0027,-0.1699,44,phonatory,fraction (0-1)
+all,jitter_local_mean,CN,6657,2,0.0379,0.017,0.0087,0.1355,-0.0027,-0.1699,44,phonatory,fraction (0-1)
+all,jitter_local_std,AD,3629,0,0.012,0.0068,0.0013,0.0567,-0.0009,-0.1257,45,phonatory,fraction (0-1)
+all,jitter_local_std,CN,6657,2,0.0129,0.0075,0.0013,0.0886,-0.0009,-0.1257,45,phonatory,fraction (0-1)
+all,jitter_local_min,AD,3629,0,0.0194,0.0102,0.0009,0.098,-0.0015,-0.134,46,phonatory,fraction (0-1)
+all,jitter_local_min,CN,6657,2,0.0209,0.0121,0.0026,0.1024,-0.0015,-0.134,46,phonatory,fraction (0-1)
+all,jitter_local_max,AD,3629,0,0.0574,0.0254,0.0139,0.1992,-0.0039,-0.1462,47,phonatory,fraction (0-1)
+all,jitter_local_max,CN,6657,2,0.0613,0.0279,0.012,0.2656,-0.0039,-0.1462,47,phonatory,fraction (0-1)
+all,jitter_local_kurtosis,AD,3629,0,-0.4865,0.9696,-2.0,3.9796,0.0393,0.0413,48,phonatory,dimensionless
+all,jitter_local_kurtosis,CN,6657,2,-0.5258,0.9316,-2.0,4.0825,0.0393,0.0413,48,phonatory,dimensionless
+all,jitter_local_skewness,AD,3629,0,0.43,0.6475,-2.0856,2.4243,0.0174,0.0271,49,phonatory,dimensionless
+all,jitter_local_skewness,CN,6657,2,0.4126,0.6382,-1.9863,2.4598,0.0174,0.0271,49,phonatory,dimensionless
+all,jitter_ddp_mean,AD,3629,0,0.054,0.0246,0.0126,0.1944,-0.0042,-0.1581,50,phonatory,fraction (0-1)
+all,jitter_ddp_mean,CN,6657,2,0.0582,0.0284,0.011,0.2314,-0.0042,-0.1581,50,phonatory,fraction (0-1)
+all,jitter_ddp_std,AD,3629,0,0.0205,0.0124,0.0,0.0978,-0.0015,-0.1157,51,phonatory,fraction (0-1)
+all,jitter_ddp_std,CN,6657,2,0.022,0.0135,0.0019,0.1509,-0.0015,-0.1157,51,phonatory,fraction (0-1)
+all,jitter_ddp_min,AD,3629,0,0.0276,0.0163,0.0008,0.1639,-0.0024,-0.1352,52,phonatory,fraction (0-1)
+all,jitter_ddp_min,CN,6657,2,0.03,0.0191,0.001,0.1633,-0.0024,-0.1352,52,phonatory,fraction (0-1)
+all,jitter_ddp_max,AD,3629,0,0.0922,0.0451,0.0177,0.3522,-0.0066,-0.1394,53,phonatory,fraction (0-1)
+all,jitter_ddp_max,CN,6657,2,0.0988,0.0495,0.0145,0.5781,-0.0066,-0.1394,53,phonatory,fraction (0-1)
+all,jitter_ddp_kurtosis,AD,3629,0,-0.4707,0.9971,-1.9977,4.0103,0.0181,0.0183,54,phonatory,dimensionless
+all,jitter_ddp_kurtosis,CN,6657,2,-0.4888,0.9765,-2.0,4.0722,0.0181,0.0183,54,phonatory,dimensionless
+all,jitter_ddp_skewness,AD,3629,0,0.4614,0.649,-1.8995,2.4332,0.0073,0.0113,55,phonatory,dimensionless
+all,jitter_ddp_skewness,CN,6657,2,0.4541,0.6468,-2.1404,2.4564,0.0073,0.0113,55,phonatory,dimensionless
+all,shimmer_local_mean,AD,3629,0,0.1624,0.0358,0.0521,0.3251,0.0005,0.0138,56,phonatory,fraction (0-1)
+all,shimmer_local_mean,CN,6656,3,0.1619,0.0365,0.0398,0.3007,0.0005,0.0138,56,phonatory,fraction (0-1)
+all,shimmer_local_std,AD,3629,0,0.0273,0.0133,0.0,0.2395,0.0014,0.1069,57,phonatory,fraction (0-1)
+all,shimmer_local_std,CN,6656,3,0.0259,0.0129,0.0034,0.1913,0.0014,0.1069,57,phonatory,fraction (0-1)
+all,shimmer_local_min,AD,3629,0,0.1231,0.0357,0.0104,0.2447,-0.0008,-0.0222,58,phonatory,fraction (0-1)
+all,shimmer_local_min,CN,6656,3,0.1239,0.0364,0.0038,0.249,-0.0008,-0.0222,58,phonatory,fraction (0-1)
+all,shimmer_local_max,AD,3629,0,0.21,0.0503,0.0592,0.8031,0.0042,0.0842,59,phonatory,fraction (0-1)
+all,shimmer_local_max,CN,6656,3,0.2058,0.0495,0.0489,0.6854,0.0042,0.0842,59,phonatory,fraction (0-1)
+all,shimmer_local_kurtosis,AD,3629,0,-0.5563,0.8887,-1.9998,3.9685,0.0658,0.0767,60,phonatory,dimensionless
+all,shimmer_local_kurtosis,CN,6656,3,-0.6221,0.8263,-2.0,3.9394,0.0658,0.0767,60,phonatory,dimensionless
+all,shimmer_local_skewness,AD,3629,0,0.2109,0.6656,-2.1969,2.4181,0.0537,0.0821,61,phonatory,dimensionless
+all,shimmer_local_skewness,CN,6656,3,0.1572,0.6428,-2.136,2.4127,0.0537,0.0821,61,phonatory,dimensionless
+all,shimmer_apq3_mean,AD,3629,0,0.0749,0.0224,0.0191,0.1825,0.0001,0.0045,62,phonatory,fraction (0-1)
+all,shimmer_apq3_mean,CN,6655,4,0.0748,0.0221,0.0142,0.2378,0.0001,0.0045,62,phonatory,fraction (0-1)
+all,shimmer_apq3_std,AD,3629,0,0.0169,0.0092,0.0,0.139,0.0011,0.1189,63,phonatory,fraction (0-1)
+all,shimmer_apq3_std,CN,6655,4,0.0158,0.0093,0.0,0.1496,0.0011,0.1189,63,phonatory,fraction (0-1)
+all,shimmer_apq3_min,AD,3629,0,0.0517,0.0193,0.0014,0.1292,-0.0012,-0.0627,64,phonatory,fraction (0-1)
+all,shimmer_apq3_min,CN,6655,4,0.0529,0.019,0.0,0.1312,-0.0012,-0.0627,64,phonatory,fraction (0-1)
+all,shimmer_apq3_max,AD,3629,0,0.1054,0.0361,0.0265,0.5312,0.0026,0.0729,65,phonatory,fraction (0-1)
+all,shimmer_apq3_max,CN,6655,4,0.1028,0.0352,0.0193,0.5279,0.0026,0.0729,65,phonatory,fraction (0-1)
+all,shimmer_apq3_kurtosis,AD,3629,0,-0.5081,0.9515,-1.9998,3.9794,0.0434,0.0469,66,phonatory,dimensionless
+all,shimmer_apq3_kurtosis,CN,6655,4,-0.5515,0.8976,-2.0,3.9776,0.0434,0.0469,66,phonatory,dimensionless
+all,shimmer_apq3_skewness,AD,3629,0,0.3176,0.6697,-1.9014,2.4238,0.0324,0.0489,67,phonatory,dimensionless
+all,shimmer_apq3_skewness,CN,6655,4,0.2852,0.6559,-2.1584,2.4223,0.0324,0.0489,67,phonatory,dimensionless
+all,hnr_mean,AD,3629,0,9.0598,3.6724,-1.6324,28.7937,0.5194,0.146,68,phonatory,dB
+all,hnr_mean,CN,6658,1,8.5404,3.4376,-3.666,25.8897,0.5194,0.146,68,phonatory,dB
+all,hnr_std,AD,3629,0,5.1878,0.9788,0.9834,13.0977,-0.0908,-0.0912,69,phonatory,dB
+all,hnr_std,CN,6658,1,5.2786,1.0113,0.8734,11.9043,-0.0908,-0.0912,69,phonatory,dB
+all,hnr_min,AD,3629,0,-4.5589,5.0862,-35.1082,22.0789,1.1982,0.2237,70,phonatory,dB
+all,hnr_min,CN,6658,1,-5.7571,5.6133,-40.5296,14.4971,1.1982,0.2237,70,phonatory,dB
+all,hnr_max,AD,3629,0,22.2318,4.6495,3.0583,43.6856,-0.0622,-0.0135,71,phonatory,dB
+all,hnr_max,CN,6658,1,22.294,4.5685,1.0113,53.9284,-0.0622,-0.0135,71,phonatory,dB
+all,hnr_kurtosis,AD,3629,0,-0.0671,1.0965,-1.6322,26.7429,-0.093,-0.0877,72,phonatory,dimensionless
+all,hnr_kurtosis,CN,6658,1,0.0259,1.0233,-2.0,13.8488,-0.093,-0.0877,72,phonatory,dimensionless
+all,hnr_skewness,AD,3629,0,0.0132,0.4381,-3.6192,3.4773,-0.0167,-0.0375,73,phonatory,dimensionless
+all,hnr_skewness,CN,6658,1,0.0299,0.4531,-2.1636,3.2784,-0.0167,-0.0375,73,phonatory,dimensionless
+all,mfcc_1_mean,AD,3629,0,-444.8055,124.5512,-755.6394,-97.908,-19.405,-0.1656,74,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_1_mean,CN,6659,0,-425.4005,109.3377,-876.0121,8.8819,-19.405,-0.1656,74,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_1_std,AD,3629,0,56.2932,19.4198,12.6733,148.6302,3.0162,0.1513,75,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_1_std,CN,6659,0,53.277,20.4375,13.5354,181.7004,3.0162,0.1513,75,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_2_mean,AD,3629,0,110.9859,21.9435,32.5803,229.7028,-0.1269,-0.0061,76,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_2_mean,CN,6659,0,111.1128,19.7751,34.4862,203.7139,-0.1269,-0.0061,76,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_2_std,AD,3629,0,38.2095,12.7183,9.112,93.3693,1.2397,0.0948,77,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_2_std,CN,6659,0,36.9698,13.4302,8.854,116.4626,1.2397,0.0948,77,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_3_mean,AD,3629,0,13.101,20.1508,-92.4126,63.5447,-2.3273,-0.1313,78,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_3_mean,CN,6659,0,15.4283,14.902,-76.5352,68.2354,-2.3273,-0.1313,78,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_3_std,AD,3629,0,24.8649,9.7632,6.3841,64.0312,1.4787,0.1529,79,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_3_std,CN,6659,0,23.3862,9.5827,5.3336,66.7279,1.4787,0.1529,79,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_4_mean,AD,3629,0,21.2214,13.3341,-17.0866,79.3896,-1.0187,-0.0786,80,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_4_mean,CN,6659,0,22.2401,12.5707,-30.5219,94.4368,-1.0187,-0.0786,80,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_4_std,AD,3629,0,23.073,7.6977,6.351,69.2591,1.2894,0.1703,81,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_4_std,CN,6659,0,21.7836,7.446,5.595,56.5403,1.2894,0.1703,81,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_5_mean,AD,3629,0,-0.3789,13.8099,-68.5826,29.269,-2.9809,-0.2304,82,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_5_mean,CN,6659,0,2.602,12.0023,-57.8157,35.3531,-2.9809,-0.2304,82,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_5_std,AD,3629,0,16.7303,5.2674,5.0611,35.7029,0.8788,0.1661,83,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_5_std,CN,6659,0,15.8515,5.3136,4.9184,43.2692,0.8788,0.1661,83,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_6_mean,AD,3629,0,0.3081,10.0545,-44.734,29.4132,-1.9471,-0.1987,84,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_6_mean,CN,6659,0,2.2552,9.5361,-47.3872,29.0361,-1.9471,-0.1987,84,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_6_std,AD,3629,0,15.632,4.9087,5.1622,40.3604,1.2668,0.2733,85,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_6_std,CN,6659,0,14.3652,4.3439,4.3666,34.4711,1.2668,0.2733,85,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_7_mean,AD,3629,0,-8.705,9.7243,-46.7952,17.6097,-2.1624,-0.2348,86,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_7_mean,CN,6659,0,-6.5426,8.6604,-50.8147,18.716,-2.1624,-0.2348,86,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_7_std,AD,3629,0,14.3095,4.1136,4.9882,35.7054,0.9581,0.2397,87,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_7_std,CN,6659,0,13.3514,3.8768,4.5343,30.7085,0.9581,0.2397,87,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_8_mean,AD,3629,0,0.1393,7.5144,-34.2331,21.6598,-0.7585,-0.0937,88,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_8_mean,CN,6659,0,0.8978,8.6408,-46.6577,24.8326,-0.7585,-0.0937,88,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_8_std,AD,3629,0,12.4647,3.1964,4.6105,27.8935,0.6233,0.1959,89,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_8_std,CN,6659,0,11.8414,3.1671,4.2884,25.0221,0.6233,0.1959,89,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_9_mean,AD,3629,0,-3.3782,7.6534,-38.3351,17.3486,-1.6633,-0.197,90,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_9_mean,CN,6659,0,-1.7149,9.1636,-44.3752,20.6586,-1.6633,-0.197,90,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_9_std,AD,3629,0,11.4338,3.1642,4.0953,29.8587,0.7048,0.233,91,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_9_std,CN,6659,0,10.729,2.8792,4.0775,24.4031,0.7048,0.233,91,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_10_mean,AD,3629,0,0.4707,6.0927,-23.226,18.889,-1.2341,-0.1912,92,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_10_mean,CN,6659,0,1.7048,6.7952,-28.3048,33.7578,-1.2341,-0.1912,92,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_10_std,AD,3629,0,10.0743,2.6163,3.7993,21.7228,0.5811,0.2274,93,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_10_std,CN,6659,0,9.4932,2.4924,3.8249,23.4153,0.5811,0.2274,93,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_11_mean,AD,3629,0,-3.9836,4.92,-33.404,13.6724,-1.1959,-0.2334,94,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_11_mean,CN,6659,0,-2.7877,5.3205,-31.3009,15.1125,-1.1959,-0.2334,94,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_11_std,AD,3629,0,9.1024,2.2845,3.966,19.6593,0.5335,0.2391,95,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_11_std,CN,6659,0,8.5689,2.1773,3.4528,18.7506,0.5335,0.2391,95,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_12_mean,AD,3629,0,0.2107,6.3598,-26.3863,21.744,-1.8651,-0.286,96,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_12_mean,CN,6659,0,2.0758,6.679,-31.1824,25.8522,-1.8651,-0.286,96,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_12_std,AD,3629,0,8.4276,2.1842,3.8289,21.8208,0.4619,0.2189,97,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_12_std,CN,6659,0,7.9657,2.0336,3.2893,19.4218,0.4619,0.2189,97,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_13_mean,AD,3629,0,-1.9124,4.8327,-19.1009,16.0884,-1.3187,-0.2659,98,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_13_mean,CN,6659,0,-0.5937,5.0843,-20.9438,20.2035,-1.3187,-0.2659,98,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_13_std,AD,3629,0,7.8456,2.0128,3.6881,20.6077,0.3917,0.2,99,spectral/cepstral,dimensionless (cepstral)
+all,mfcc_13_std,CN,6659,0,7.4539,1.9034,3.3908,21.2514,0.3917,0.2,99,spectral/cepstral,dimensionless (cepstral)
+all,delta_mfcc_1_mean,AD,3629,0,0.0043,0.7043,-3.3626,3.8151,0.0313,0.0454,100,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_1_mean,CN,6659,0,-0.027,0.6743,-3.8238,4.3978,0.0313,0.0454,100,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_1_std,AD,3629,0,10.3303,3.7013,1.9839,26.6554,0.5234,0.138,101,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_1_std,CN,6659,0,9.8069,3.8803,1.8052,32.4132,0.5234,0.138,101,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_2_mean,AD,3629,0,0.0007,0.4324,-2.1414,2.7086,0.0048,0.0111,102,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_2_mean,CN,6659,0,-0.0041,0.4295,-2.3158,3.1493,0.0048,0.0111,102,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_2_std,AD,3629,0,7.596,2.675,1.3639,18.5258,0.2742,0.1001,103,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_2_std,CN,6659,0,7.3218,2.8023,1.655,21.746,0.2742,0.1001,103,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_3_mean,AD,3629,0,0.0014,0.278,-1.1986,1.439,-0.0009,-0.0033,104,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_3_mean,CN,6659,0,0.0023,0.2738,-1.838,1.7062,-0.0009,-0.0033,104,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_3_std,AD,3629,0,4.9163,2.0532,1.1612,13.5237,0.2412,0.1177,105,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_3_std,CN,6659,0,4.6751,2.0448,0.9985,14.5021,0.2412,0.1177,105,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_4_mean,AD,3629,0,-0.0012,0.2592,-1.0299,1.1844,-0.0007,-0.0028,106,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_4_mean,CN,6659,0,-0.0005,0.2446,-1.4256,1.1019,-0.0007,-0.0028,106,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_4_std,AD,3629,0,4.4686,1.6108,1.2096,12.1183,0.2445,0.1556,107,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_4_std,CN,6659,0,4.2241,1.5317,0.9384,12.0584,0.2445,0.1556,107,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_5_mean,AD,3629,0,-0.0008,0.189,-0.8846,0.8175,-0.0066,-0.0357,108,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_5_mean,CN,6659,0,0.0058,0.1806,-0.9122,1.0189,-0.0066,-0.0357,108,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_5_std,AD,3629,0,3.2929,1.0997,0.9772,7.464,0.1503,0.1354,109,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_5_std,CN,6659,0,3.1426,1.121,0.773,9.0691,0.1503,0.1354,109,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_6_mean,AD,3629,0,0.006,0.1737,-1.0309,0.934,0.0014,0.0084,110,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_6_mean,CN,6659,0,0.0046,0.1602,-0.6819,0.8348,0.0014,0.0084,110,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_6_std,AD,3629,0,3.0647,1.024,0.8399,8.3447,0.2746,0.2821,111,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_6_std,CN,6659,0,2.7901,0.92,0.6934,6.4218,0.2746,0.2821,111,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_7_mean,AD,3629,0,-0.0005,0.1549,-0.8489,0.8596,-0.0025,-0.0166,112,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_7_mean,CN,6659,0,0.002,0.1468,-0.9365,0.7443,-0.0025,-0.0166,112,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_7_std,AD,3629,0,2.7419,0.8647,0.9047,6.1628,0.1895,0.2263,113,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_7_std,CN,6659,0,2.5524,0.8093,0.8228,7.3586,0.1895,0.2263,113,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_8_mean,AD,3629,0,-0.0012,0.1357,-0.6008,0.6848,-0.003,-0.0227,114,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_8_mean,CN,6659,0,0.0018,0.1289,-0.614,0.6406,-0.003,-0.0227,114,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_8_std,AD,3629,0,2.3938,0.6744,0.7974,4.9369,0.1486,0.2213,115,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_8_std,CN,6659,0,2.2452,0.6684,0.7324,5.6196,0.1486,0.2213,115,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_9_mean,AD,3629,0,0.0011,0.1276,-0.5959,0.6131,-0.0015,-0.0123,116,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_9_mean,CN,6659,0,0.0026,0.1166,-0.5015,0.6605,-0.0015,-0.0123,116,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_9_std,AD,3629,0,2.1638,0.6672,0.555,6.5044,0.1419,0.2239,117,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_9_std,CN,6659,0,2.0219,0.5983,0.6619,4.8745,0.1419,0.2239,117,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_10_mean,AD,3629,0,-0.0032,0.1103,-0.5387,0.4361,-0.0056,-0.0522,118,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_10_mean,CN,6659,0,0.0024,0.1042,-0.5434,0.4434,-0.0056,-0.0522,118,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_10_std,AD,3629,0,1.9213,0.5411,0.6439,4.1429,0.1179,0.2227,119,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_10_std,CN,6659,0,1.8034,0.5175,0.6951,4.3371,0.1179,0.2227,119,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_11_mean,AD,3629,0,-0.0011,0.0974,-0.3466,0.4627,0.0001,0.0011,120,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_11_mean,CN,6659,0,-0.0012,0.0924,-0.5328,0.447,0.0001,0.0011,120,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_11_std,AD,3629,0,1.7368,0.478,0.6433,4.2401,0.1077,0.2318,121,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_11_std,CN,6659,0,1.6291,0.4509,0.5816,3.9016,0.1077,0.2318,121,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_12_mean,AD,3629,0,-0.0004,0.0912,-0.4382,0.5634,0.0,0.0,122,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_12_mean,CN,6659,0,-0.0004,0.0853,-0.3772,0.4039,0.0,0.0,122,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_12_std,AD,3629,0,1.6144,0.4582,0.6608,3.8494,0.0924,0.208,123,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_12_std,CN,6659,0,1.522,0.4297,0.5538,3.6923,0.0924,0.208,123,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_13_mean,AD,3629,0,-0.0,0.0818,-0.3667,0.4474,0.0008,0.0099,124,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_13_mean,CN,6659,0,-0.0008,0.0801,-0.4068,0.4618,0.0008,0.0099,124,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_13_std,AD,3629,0,1.4854,0.4209,0.6207,4.4193,0.0843,0.2078,125,spectral/cepstral,dimensionless (cepstral/frame)
+all,delta_mfcc_13_std,CN,6659,0,1.4011,0.3898,0.4421,3.2164,0.0843,0.2078,125,spectral/cepstral,dimensionless (cepstral/frame)
+all,alpha_ratio_mean,AD,3629,0,27.8336,8.2646,-3.6622,56.698,-0.5769,-0.0733,126,spectral/cepstral,dB (see caveat)
+all,alpha_ratio_mean,CN,6659,0,28.4105,7.4648,-10.9515,66.5486,-0.5769,-0.0733,126,spectral/cepstral,dB (see caveat)
+all,alpha_ratio_std,AD,3629,0,16.5712,5.3933,5.2811,42.1745,0.9854,0.1808,127,spectral/cepstral,dB (see caveat)
+all,alpha_ratio_std,CN,6659,0,15.5858,5.5074,4.6533,49.5148,0.9854,0.1808,127,spectral/cepstral,dB (see caveat)
+all,hammarberg_index_mean,AD,3629,0,58.2564,16.464,12.6844,122.2036,-5.3284,-0.3321,128,spectral/cepstral,dB (see caveat)
+all,hammarberg_index_mean,CN,6659,0,63.5848,15.6132,-2.569,112.1801,-5.3284,-0.3321,128,spectral/cepstral,dB (see caveat)
+all,hammarberg_index_std,AD,3629,0,21.4333,7.8312,4.265,67.9193,1.9545,0.2668,129,spectral/cepstral,dB (see caveat)
+all,hammarberg_index_std,CN,6659,0,19.4788,6.7824,5.4783,54.7283,1.9545,0.2668,129,spectral/cepstral,dB (see caveat)
+all,spectral_flux_mean,AD,3629,0,0.0677,0.0143,0.0327,0.1702,-0.0037,-0.2388,130,spectral/cepstral,dimensionless
+all,spectral_flux_mean,CN,6659,0,0.0714,0.0166,0.0316,0.1872,-0.0037,-0.2388,130,spectral/cepstral,dimensionless
+all,spectral_flux_std,AD,3629,0,0.027,0.01,0.0066,0.1037,-0.0029,-0.2678,131,spectral/cepstral,dimensionless
+all,spectral_flux_std,CN,6659,0,0.0299,0.0116,0.0082,0.1266,-0.0029,-0.2678,131,spectral/cepstral,dimensionless
+all,spectral_slope_0_500_mean,AD,3629,0,-0.0033,0.0285,-0.0853,0.076,0.0104,0.3624,132,spectral/cepstral,dB/Hz
+all,spectral_slope_0_500_mean,CN,6659,0,-0.0137,0.0289,-0.0823,0.0698,0.0104,0.3624,132,spectral/cepstral,dB/Hz
+all,spectral_slope_0_500_std,AD,3629,0,0.0225,0.0051,0.008,0.045,0.0009,0.1765,133,spectral/cepstral,dB/Hz
+all,spectral_slope_0_500_std,CN,6659,0,0.0216,0.0051,0.0086,0.0587,0.0009,0.1765,133,spectral/cepstral,dB/Hz
+all,spectral_slope_500_1500_mean,AD,3629,0,-0.0147,0.0051,-0.0537,0.0002,-0.0006,-0.1284,134,spectral/cepstral,dB/Hz
+all,spectral_slope_500_1500_mean,CN,6659,0,-0.0141,0.0042,-0.0365,0.0009,-0.0006,-0.1284,134,spectral/cepstral,dB/Hz
+all,spectral_slope_500_1500_std,AD,3629,0,0.0094,0.0027,0.0039,0.029,0.0005,0.1922,135,spectral/cepstral,dB/Hz
+all,spectral_slope_500_1500_std,CN,6659,0,0.0089,0.0025,0.0037,0.0306,0.0005,0.1922,135,spectral/cepstral,dB/Hz
+test,f0_mean,AD,746,0,182.346,47.4557,93.1597,377.8854,-5.0327,-0.1012,1,prosodic,Hz
+test,f0_mean,CN,1310,0,187.3787,51.9423,84.1793,440.273,-5.0327,-0.1012,1,prosodic,Hz
+test,f0_std,AD,746,0,75.9435,46.2726,7.0711,225.8962,-8.6485,-0.1819,2,prosodic,Hz
+test,f0_std,CN,1310,0,84.592,48.7875,6.0309,222.1637,-8.6485,-0.1819,2,prosodic,Hz
+test,f0_min,AD,746,0,93.1654,25.2087,74.9211,250.8437,-0.5932,-0.0243,3,prosodic,Hz
+test,f0_min,CN,1310,0,93.7586,23.6674,74.9458,214.1223,-0.5932,-0.0243,3,prosodic,Hz
+test,f0_max,AD,746,0,457.7841,156.303,123.0343,599.9851,-34.3854,-0.2311,4,prosodic,Hz
+test,f0_max,CN,1310,0,492.1695,140.8314,103.2641,599.9748,-34.3854,-0.2311,4,prosodic,Hz
+test,f0_kurtosis,AD,746,0,9.2123,15.3472,-1.8597,133.2495,-1.7279,-0.0987,5,prosodic,dimensionless
+test,f0_kurtosis,CN,1310,0,10.9402,19.4252,-1.8764,163.5519,-1.7279,-0.0987,5,prosodic,dimensionless
+test,f0_skewness,AD,746,0,1.8961,2.1026,-3.4769,11.1437,-0.3782,-0.1769,6,prosodic,dimensionless
+test,f0_skewness,CN,1310,0,2.2743,2.1725,-3.2908,12.3725,-0.3782,-0.1769,6,prosodic,dimensionless
+test,f0_std_norm,AD,746,0,0.41,0.2234,0.0626,1.0504,-0.0332,-0.1483,7,prosodic,dimensionless
+test,f0_std_norm,CN,1310,0,0.4432,0.2244,0.0441,1.1126,-0.0332,-0.1483,7,prosodic,dimensionless
+test,intensity_mean,AD,746,0,49.2649,11.514,19.7231,74.6683,-1.2214,-0.1116,8,intensity/energy,dB SPL (Praat scale)
+test,intensity_mean,CN,1310,0,50.4863,10.3353,-18.6122,80.3173,-1.2214,-0.1116,8,intensity/energy,dB SPL (Praat scale)
+test,intensity_std,AD,746,0,8.0201,3.3138,2.324,18.3623,0.4463,0.0779,9,intensity/energy,dB SPL (Praat scale)
+test,intensity_std,CN,1310,0,7.5738,7.3907,1.3751,124.2266,0.4463,0.0779,9,intensity/energy,dB SPL (Praat scale)
+test,intensity_min,AD,746,0,32.5282,12.5521,2.7563,66.1355,0.173,0.0087,10,intensity/energy,dB SPL (Praat scale)
+test,intensity_min,CN,1310,0,32.3552,25.0355,-300.0,69.3934,0.173,0.0087,10,intensity/energy,dB SPL (Praat scale)
+test,intensity_max,AD,746,0,66.5678,10.2201,34.5723,92.5658,1.0055,0.1014,11,intensity/energy,dB SPL (Praat scale)
+test,intensity_max,CN,1310,0,65.5623,9.6005,34.5368,88.9991,1.0055,0.1014,11,intensity/energy,dB SPL (Praat scale)
+test,intensity_kurtosis,AD,746,0,-0.4573,0.7928,-1.5858,5.8874,-0.2069,-0.2125,12,intensity/energy,dimensionless
+test,intensity_kurtosis,CN,1310,0,-0.2504,1.126,-1.7638,9.4245,-0.2069,-0.2125,12,intensity/energy,dimensionless
+test,intensity_skewness,AD,746,0,-0.034,0.4908,-1.6361,1.8968,0.1326,0.2449,13,intensity/energy,dimensionless
+test,intensity_skewness,CN,1310,0,-0.1666,0.5876,-2.7883,2.1856,0.1326,0.2449,13,intensity/energy,dimensionless
+test,energy_mean,AD,746,0,0.0204,0.0269,0.0003,0.2054,-0.001,-0.0362,14,intensity/energy,normalised amplitude
+test,energy_mean,CN,1310,0,0.0214,0.0284,0.0002,0.2786,-0.001,-0.0362,14,intensity/energy,normalised amplitude
+test,energy_std,AD,746,0,0.0155,0.0198,0.0002,0.1556,0.0007,0.034,15,intensity/energy,normalised amplitude
+test,energy_std,CN,1310,0,0.0148,0.0213,0.0002,0.1829,0.0007,0.034,15,intensity/energy,normalised amplitude
+test,energy_min,AD,746,0,0.0027,0.0044,0.0,0.0362,-0.0002,-0.0429,16,intensity/energy,normalised amplitude
+test,energy_min,CN,1310,0,0.0029,0.0049,0.0,0.0528,-0.0002,-0.0429,16,intensity/energy,normalised amplitude
+test,energy_max,AD,746,0,0.0825,0.1008,0.0012,0.7733,0.0065,0.0658,17,intensity/energy,normalised amplitude
+test,energy_max,CN,1310,0,0.076,0.0968,0.001,0.7746,0.0065,0.0658,17,intensity/energy,normalised amplitude
+test,energy_kurtosis,AD,746,0,4.6286,7.4794,-1.5199,97.6569,1.258,0.1844,18,intensity/energy,dimensionless
+test,energy_kurtosis,CN,1310,0,3.3706,6.0961,-1.6547,58.9885,1.258,0.1844,18,intensity/energy,dimensionless
+test,energy_skewness,AD,746,0,1.7163,1.0986,-0.2663,9.137,0.3148,0.2981,19,intensity/energy,dimensionless
+test,energy_skewness,CN,1310,0,1.4015,1.0117,-0.7111,7.0535,0.3148,0.2981,19,intensity/energy,dimensionless
+test,mean_pause_duration,AD,746,0,0.3189,0.3018,0.0,4.88,-0.0253,-0.0712,20,temporal/fluency,s
+test,mean_pause_duration,CN,1310,0,0.3442,0.4016,0.0,4.98,-0.0253,-0.0712,20,temporal/fluency,s
+test,total_speech_time,AD,746,0,3.5524,1.1862,0.1,4.98,-0.0379,-0.0326,21,temporal/fluency,s
+test,total_speech_time,CN,1310,0,3.5903,1.1378,0.08,5.0,-0.0379,-0.0326,21,temporal/fluency,s
+test,total_pause_time,AD,746,0,1.2908,1.1502,0.0,4.88,0.0214,0.019,22,temporal/fluency,s
+test,total_pause_time,CN,1310,0,1.2694,1.1042,0.0,4.98,0.0214,0.019,22,temporal/fluency,s
+test,pause_percentage,AD,746,0,26.5865,23.5666,0.0,97.6,0.3844,0.0166,23,temporal/fluency,%
+test,pause_percentage,CN,1310,0,26.2021,22.7121,0.0,99.9569,0.3844,0.0166,23,temporal/fluency,%
+test,silence_to_speech_ratio,AD,746,0,0.8248,2.5498,0.0,48.8,-0.1638,-0.0469,24,temporal/fluency,ratio
+test,silence_to_speech_ratio,CN,1310,0,0.9886,4.2264,0.0,61.25,-0.1638,-0.0469,24,temporal/fluency,ratio
+test,pause_variability,AD,746,0,0.1702,0.2052,0.0,1.73,0.0098,0.0482,25,temporal/fluency,s
+test,pause_variability,CN,1310,0,0.1604,0.201,0.0,2.21,0.0098,0.0482,25,temporal/fluency,s
+test,number_of_pauses,AD,746,0,3.6381,2.4204,0.0,11.0,0.0205,0.0087,26,temporal/fluency,count
+test,number_of_pauses,CN,1310,0,3.6176,2.3012,0.0,11.0,0.0205,0.0087,26,temporal/fluency,count
+test,number_of_speech_segments,AD,746,0,4.2453,2.2325,1.0,12.0,-0.031,-0.0141,27,temporal/fluency,count
+test,number_of_speech_segments,CN,1310,0,4.2763,2.1773,0.0,12.0,-0.031,-0.0141,27,temporal/fluency,count
+test,max_pause_duration,AD,746,0,0.5893,0.5687,0.0,4.88,-0.0047,-0.008,28,temporal/fluency,s
+test,max_pause_duration,CN,1310,0,0.594,0.6004,0.0,4.98,-0.0047,-0.008,28,temporal/fluency,s
+test,min_pause_duration,AD,746,0,0.1541,0.2139,0.0,4.88,-0.0332,-0.1148,29,temporal/fluency,s
+test,min_pause_duration,CN,1310,0,0.1873,0.3484,0.0,4.98,-0.0332,-0.1148,29,temporal/fluency,s
+test,pause_rate,AD,746,0,0.7507,0.5041,0.0,2.6533,0.0044,0.009,30,temporal/fluency,pauses/s
+test,pause_rate,CN,1310,0,0.7463,0.4741,0.0,2.4228,0.0044,0.009,30,temporal/fluency,pauses/s
+test,mean_speech_segment_duration,AD,746,0,1.3327,1.2649,0.09,4.98,0.0519,0.0422,31,temporal/fluency,s
+test,mean_speech_segment_duration,CN,1310,0,1.2808,1.1916,0.08,5.0,0.0519,0.0422,31,temporal/fluency,s
+test,std_speech_segment_duration,AD,746,0,0.6359,0.5481,0.0,2.36,-0.0307,-0.0553,32,temporal/fluency,s
+test,std_speech_segment_duration,CN,1310,0,0.6666,0.5619,0.0,2.35,-0.0307,-0.0553,32,temporal/fluency,s
+test,mean_inter_pause_interval,AD,746,0,0.6559,0.7518,0.0,4.16,-0.0071,-0.0095,33,temporal/fluency,s
+test,mean_inter_pause_interval,CN,1310,0,0.663,0.7494,0.0,4.46,-0.0071,-0.0095,33,temporal/fluency,s
+test,std_inter_pause_interval,AD,746,0,0.2168,0.295,0.0,1.56,0.0034,0.0115,34,temporal/fluency,s
+test,std_inter_pause_interval,CN,1310,0,0.2134,0.2942,0.0,1.92,0.0034,0.0115,34,temporal/fluency,s
+test,long_pause_count,AD,746,0,0.6917,0.9749,0.0,4.0,0.0344,0.0365,35,temporal/fluency,count
+test,long_pause_count,CN,1310,0,0.6573,0.9068,0.0,4.0,0.0344,0.0365,35,temporal/fluency,count
+test,short_pause_count,AD,746,0,2.9464,2.1869,0.0,11.0,-0.0139,-0.0065,36,temporal/fluency,count
+test,short_pause_count,CN,1310,0,2.9603,2.1222,0.0,11.0,-0.0139,-0.0065,36,temporal/fluency,count
+test,pause_duration_skewness,AD,746,0,0.3799,0.5752,-1.136,2.0696,0.0175,0.031,37,temporal/fluency,dimensionless
+test,pause_duration_skewness,CN,1308,2,0.3624,0.5539,-1.3609,2.3892,0.0175,0.031,37,temporal/fluency,dimensionless
+test,speech_rate,AD,746,0,3.6401,0.9907,0.5867,5.7067,-0.3358,-0.3347,38,articulatory,syllables/s
+test,speech_rate,CN,1310,0,3.9759,1.0157,0.5733,6.44,-0.3358,-0.3347,38,articulatory,syllables/s
+test,articulation_rate,AD,746,0,3.8404,0.9457,0.5867,5.7067,-0.2342,-0.2429,39,articulatory,syllables/s
+test,articulation_rate,CN,1310,0,4.0746,0.9826,0.6044,6.44,-0.2342,-0.2429,39,articulatory,syllables/s
+test,avg_syllable_duration,AD,746,0,0.2853,0.1227,0.1752,1.7045,0.0155,0.1268,40,articulatory,s
+test,avg_syllable_duration,CN,1310,0,0.2698,0.1217,0.1553,1.6544,0.0155,0.1268,40,articulatory,s
+test,f1_std,AD,746,0,360.769,109.1927,121.105,716.2333,-24.2094,-0.204,41,articulatory,Hz
+test,f1_std,CN,1310,0,384.9784,127.4087,74.1365,740.381,-24.2094,-0.204,41,articulatory,Hz
+test,f2_std,AD,746,0,468.5937,80.3901,211.3205,729.0106,-13.7271,-0.1629,42,articulatory,Hz
+test,f2_std,CN,1310,0,482.3208,88.0054,249.0159,881.214,-13.7271,-0.1629,42,articulatory,Hz
+test,vocal_tract_length,AD,746,0,14.9359,1.3587,11.4004,21.0333,-0.0711,-0.0518,43,articulatory,cm
+test,vocal_tract_length,CN,1310,0,15.007,1.3842,9.8226,19.8909,-0.0711,-0.0518,43,articulatory,cm
+test,jitter_local_mean,AD,746,0,0.0346,0.0145,0.0126,0.0973,-0.0015,-0.1027,44,phonatory,fraction (0-1)
+test,jitter_local_mean,CN,1310,0,0.0361,0.0147,0.0102,0.102,-0.0015,-0.1027,44,phonatory,fraction (0-1)
+test,jitter_local_std,AD,746,0,0.0115,0.0069,0.0015,0.0482,-0.0009,-0.1295,45,phonatory,fraction (0-1)
+test,jitter_local_std,CN,1310,0,0.0124,0.007,0.0013,0.0518,-0.0009,-0.1295,45,phonatory,fraction (0-1)
+test,jitter_local_min,AD,746,0,0.0196,0.0093,0.0055,0.0725,0.0,0.0,46,phonatory,fraction (0-1)
+test,jitter_local_min,CN,1310,0,0.0196,0.01,0.0026,0.0812,0.0,0.0,46,phonatory,fraction (0-1)
+test,jitter_local_max,AD,746,0,0.0556,0.0255,0.0139,0.188,-0.0031,-0.1218,47,phonatory,fraction (0-1)
+test,jitter_local_max,CN,1310,0,0.0587,0.0254,0.0169,0.1816,-0.0031,-0.1218,47,phonatory,fraction (0-1)
+test,jitter_local_kurtosis,AD,746,0,-0.5237,0.9615,-1.8688,3.7068,0.0158,0.0165,48,phonatory,dimensionless
+test,jitter_local_kurtosis,CN,1310,0,-0.5395,0.9507,-1.9204,4.0627,0.0158,0.0165,48,phonatory,dimensionless
+test,jitter_local_skewness,AD,746,0,0.4288,0.6344,-1.5156,2.3224,0.0349,0.0551,49,phonatory,dimensionless
+test,jitter_local_skewness,CN,1310,0,0.3939,0.6316,-1.799,2.4532,0.0349,0.0551,49,phonatory,dimensionless
+test,jitter_ddp_mean,AD,746,0,0.0532,0.0247,0.0148,0.1692,-0.0021,-0.0854,50,phonatory,fraction (0-1)
+test,jitter_ddp_mean,CN,1310,0,0.0553,0.0245,0.0148,0.1693,-0.0021,-0.0854,50,phonatory,fraction (0-1)
+test,jitter_ddp_std,AD,746,0,0.0199,0.0132,0.002,0.0833,-0.0012,-0.093,51,phonatory,fraction (0-1)
+test,jitter_ddp_std,CN,1310,0,0.0211,0.0126,0.0026,0.0947,-0.0012,-0.093,51,phonatory,fraction (0-1)
+test,jitter_ddp_min,AD,746,0,0.0279,0.0151,0.0062,0.1223,-0.0002,-0.0129,52,phonatory,fraction (0-1)
+test,jitter_ddp_min,CN,1310,0,0.0281,0.0158,0.0039,0.1311,-0.0002,-0.0129,52,phonatory,fraction (0-1)
+test,jitter_ddp_max,AD,746,0,0.0901,0.0473,0.0177,0.3099,-0.0044,-0.0953,53,phonatory,fraction (0-1)
+test,jitter_ddp_max,CN,1310,0,0.0945,0.045,0.0257,0.3552,-0.0044,-0.0953,53,phonatory,fraction (0-1)
+test,jitter_ddp_kurtosis,AD,746,0,-0.5259,0.9843,-1.9143,3.7158,-0.0398,-0.0405,54,phonatory,dimensionless
+test,jitter_ddp_kurtosis,CN,1310,0,-0.4861,0.9792,-1.8819,4.0581,-0.0398,-0.0405,54,phonatory,dimensionless
+test,jitter_ddp_skewness,AD,746,0,0.4602,0.6324,-1.4343,2.3353,0.0146,0.0228,55,phonatory,dimensionless
+test,jitter_ddp_skewness,CN,1310,0,0.4456,0.6465,-1.564,2.4519,0.0146,0.0228,55,phonatory,dimensionless
+test,shimmer_local_mean,AD,746,0,0.1619,0.0374,0.0556,0.3251,0.0046,0.1257,56,phonatory,fraction (0-1)
+test,shimmer_local_mean,CN,1310,0,0.1573,0.0358,0.0398,0.2913,0.0046,0.1257,56,phonatory,fraction (0-1)
+test,shimmer_local_std,AD,746,0,0.0275,0.0146,0.0078,0.2395,0.002,0.1507,57,phonatory,fraction (0-1)
+test,shimmer_local_std,CN,1310,0,0.0255,0.0118,0.0043,0.0942,0.002,0.1507,57,phonatory,fraction (0-1)
+test,shimmer_local_min,AD,746,0,0.1223,0.037,0.0145,0.2313,0.0027,0.0741,58,phonatory,fraction (0-1)
+test,shimmer_local_min,CN,1310,0,0.1196,0.0359,0.0225,0.2426,0.0027,0.0741,58,phonatory,fraction (0-1)
+test,shimmer_local_max,AD,746,0,0.2096,0.0532,0.0791,0.8031,0.0093,0.1854,59,phonatory,fraction (0-1)
+test,shimmer_local_max,CN,1310,0,0.2003,0.0469,0.0489,0.4552,0.0093,0.1854,59,phonatory,fraction (0-1)
+test,shimmer_local_kurtosis,AD,746,0,-0.5834,0.8685,-1.8263,3.9685,0.0591,0.0709,60,phonatory,dimensionless
+test,shimmer_local_kurtosis,CN,1310,0,-0.6425,0.798,-1.8238,3.7663,0.0591,0.0709,60,phonatory,dimensionless
+test,shimmer_local_skewness,AD,746,0,0.1927,0.651,-1.7664,2.4181,0.0386,0.0603,61,phonatory,dimensionless
+test,shimmer_local_skewness,CN,1310,0,0.1541,0.628,-2.136,2.3478,0.0386,0.0603,61,phonatory,dimensionless
+test,shimmer_apq3_mean,AD,746,0,0.0747,0.0241,0.0191,0.1825,0.0026,0.1155,62,phonatory,fraction (0-1)
+test,shimmer_apq3_mean,CN,1310,0,0.0721,0.0208,0.0142,0.15,0.0026,0.1155,62,phonatory,fraction (0-1)
+test,shimmer_apq3_std,AD,746,0,0.0171,0.0094,0.0029,0.0843,0.002,0.2256,63,phonatory,fraction (0-1)
+test,shimmer_apq3_std,CN,1310,0,0.0151,0.0083,0.0019,0.1054,0.002,0.2256,63,phonatory,fraction (0-1)
+test,shimmer_apq3_min,AD,746,0,0.0513,0.0206,0.0099,0.1292,0.0007,0.0359,64,phonatory,fraction (0-1)
+test,shimmer_apq3_min,CN,1310,0,0.0506,0.0183,0.0075,0.1168,0.0007,0.0359,64,phonatory,fraction (0-1)
+test,shimmer_apq3_max,AD,746,0,0.1051,0.0371,0.0307,0.3546,0.0066,0.1903,65,phonatory,fraction (0-1)
+test,shimmer_apq3_max,CN,1310,0,0.0985,0.0321,0.0193,0.4175,0.0066,0.1903,65,phonatory,fraction (0-1)
+test,shimmer_apq3_kurtosis,AD,746,0,-0.5463,0.9395,-1.9983,3.9142,0.0277,0.0304,66,phonatory,dimensionless
+test,shimmer_apq3_kurtosis,CN,1310,0,-0.574,0.8803,-1.8314,3.9658,0.0277,0.0304,66,phonatory,dimensionless
+test,shimmer_apq3_skewness,AD,746,0,0.3058,0.665,-1.9014,2.397,0.058,0.0879,67,phonatory,dimensionless
+test,shimmer_apq3_skewness,CN,1310,0,0.2478,0.6539,-1.9639,2.4205,0.058,0.0879,67,phonatory,dimensionless
+test,hnr_mean,AD,746,0,9.2522,3.7532,-0.57,18.2883,0.4445,0.1269,68,phonatory,dB
+test,hnr_mean,CN,1310,0,8.8077,3.232,-0.7177,20.907,0.4445,0.1269,68,phonatory,dB
+test,hnr_std,AD,746,0,5.2472,0.8993,2.7613,9.286,-0.0058,-0.0062,69,phonatory,dB
+test,hnr_std,CN,1310,0,5.253,0.9733,1.638,10.1518,-0.0058,-0.0062,69,phonatory,dB
+test,hnr_min,AD,746,0,-4.6228,5.3494,-28.3502,7.433,0.929,0.1711,70,phonatory,dB
+test,hnr_min,CN,1310,0,-5.5518,5.5108,-32.9338,10.3971,0.929,0.1711,70,phonatory,dB
+test,hnr_max,AD,746,0,22.5844,4.3935,9.1864,40.3493,0.0574,0.0129,71,phonatory,dB
+test,hnr_max,CN,1310,0,22.527,4.4787,2.236,53.9284,0.0574,0.0129,71,phonatory,dB
+test,hnr_kurtosis,AD,746,0,-0.0094,0.8981,-1.5315,10.8547,-0.1215,-0.1083,72,phonatory,dimensionless
+test,hnr_kurtosis,CN,1310,0,0.1121,1.3088,-1.5,13.8488,-0.1215,-0.1083,72,phonatory,dimensionless
+test,hnr_skewness,AD,746,0,0.0143,0.46,-1.5883,3.0757,-0.0001,-0.0002,73,phonatory,dimensionless
+test,hnr_skewness,CN,1310,0,0.0144,0.4935,-2.1636,3.2784,-0.0001,-0.0002,73,phonatory,dimensionless
+test,mfcc_1_mean,AD,746,0,-437.9788,122.7952,-727.3815,-106.0424,-10.2007,-0.09,74,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_1_mean,CN,1310,0,-427.7781,103.1207,-766.1313,-21.3189,-10.2007,-0.09,74,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_1_std,AD,746,0,57.0611,20.6197,16.4201,136.1409,3.1831,0.1546,75,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_1_std,CN,1310,0,53.878,20.5631,13.5354,161.8936,3.1831,0.1546,75,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_2_mean,AD,746,0,111.2535,19.721,54.0137,161.0313,0.5491,0.028,76,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_2_mean,CN,1310,0,110.7044,19.5268,34.4862,171.916,0.5491,0.028,76,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_2_std,AD,746,0,38.4086,13.3238,9.112,77.1034,0.7247,0.0535,77,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_2_std,CN,1310,0,37.6839,13.7874,10.5184,116.4626,0.7247,0.0535,77,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_3_mean,AD,746,0,13.7178,15.5102,-52.8559,51.4384,-1.9133,-0.1323,78,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_3_mean,CN,1310,0,15.6311,13.3401,-45.3956,54.2227,-1.9133,-0.1323,78,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_3_std,AD,746,0,25.8014,10.7674,6.3841,60.2733,2.192,0.2166,79,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_3_std,CN,1310,0,23.6094,9.426,5.8534,66.7279,2.192,0.2166,79,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_4_mean,AD,746,0,20.2075,12.7703,-14.914,79.3896,-1.2578,-0.0972,80,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_4_mean,CN,1310,0,21.4653,13.1019,-23.7313,94.4368,-1.2578,-0.0972,80,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_4_std,AD,746,0,23.7264,8.8334,8.076,69.2591,1.9344,0.2395,81,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_4_std,CN,1310,0,21.792,7.2384,5.595,56.5403,1.9344,0.2395,81,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_5_mean,AD,746,0,1.1046,10.5226,-41.9569,25.5466,-1.0061,-0.0858,82,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_5_mean,CN,1310,0,2.1107,12.8174,-57.8157,25.7617,-1.0061,-0.0858,82,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_5_std,AD,746,0,16.8761,5.7352,6.6578,33.9532,0.9061,0.1652,83,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_5_std,CN,1310,0,15.97,5.2241,5.156,37.6664,0.9061,0.1652,83,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_6_mean,AD,746,0,-0.4465,10.1242,-31.7228,29.4132,-2.4722,-0.2491,84,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_6_mean,CN,1310,0,2.0257,9.7205,-37.1493,29.0361,-2.4722,-0.2491,84,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_6_std,AD,746,0,16.077,5.1422,5.1622,35.4052,1.809,0.3857,85,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_6_std,CN,1310,0,14.268,4.1886,5.1572,34.4711,1.809,0.3857,85,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_7_mean,AD,746,0,-7.8261,8.9865,-35.7683,14.7476,-0.6548,-0.0749,86,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_7_mean,CN,1310,0,-7.1713,8.4936,-37.7724,16.5908,-0.6548,-0.0749,86,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_7_std,AD,746,0,14.5308,4.2867,6.2959,26.7894,0.9255,0.2247,87,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_7_std,CN,1310,0,13.6053,3.9455,5.4385,30.7085,0.9255,0.2247,87,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_8_mean,AD,746,0,0.1669,8.0319,-30.6707,20.1058,-0.1493,-0.0185,88,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_8_mean,CN,1310,0,0.3162,8.118,-28.1855,20.1437,-0.1493,-0.0185,88,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_8_std,AD,746,0,12.5621,3.3922,4.683,24.6339,0.5126,0.1564,89,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_8_std,CN,1310,0,12.0495,3.158,4.6413,24.71,0.5126,0.1564,89,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_9_mean,AD,746,0,-2.7745,7.0502,-38.1297,12.1901,-0.5815,-0.0715,90,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_9_mean,CN,1310,0,-2.193,9.0852,-44.3752,20.0677,-0.5815,-0.0715,90,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_9_std,AD,746,0,11.5751,3.4776,5.4266,26.1117,0.6297,0.1943,91,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_9_std,CN,1310,0,10.9454,2.9856,4.1338,24.4031,0.6297,0.1943,91,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_10_mean,AD,746,0,0.7052,5.926,-19.3189,18.8402,-1.2668,-0.2022,92,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_10_mean,CN,1310,0,1.972,6.5857,-20.8714,33.7578,-1.2668,-0.2022,92,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_10_std,AD,746,0,10.2512,2.8468,4.5329,21.7228,0.6093,0.2314,93,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_10_std,CN,1310,0,9.6419,2.4005,3.8249,19.0721,0.6093,0.2314,93,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_11_mean,AD,746,0,-3.8581,5.0949,-25.4015,8.9922,-0.9783,-0.1913,94,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_11_mean,CN,1310,0,-2.8798,5.1304,-27.0572,12.3205,-0.9783,-0.1913,94,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_11_std,AD,746,0,9.116,2.3608,4.1702,18.4737,0.5223,0.2317,95,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_11_std,CN,1310,0,8.5937,2.1431,3.4528,18.5005,0.5223,0.2317,95,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_12_mean,AD,746,0,0.4697,6.2122,-25.2792,12.7535,-1.1439,-0.1735,96,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_12_mean,CN,1310,0,1.6136,6.9566,-31.1824,20.6921,-1.1439,-0.1735,96,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_12_std,AD,746,0,8.4856,2.3574,3.9428,17.1348,0.4062,0.1837,97,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_12_std,CN,1310,0,8.0794,2.0536,3.2893,19.4218,0.4062,0.1837,97,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_13_mean,AD,746,0,-2.2369,4.9637,-19.1009,12.1293,-1.6397,-0.3205,98,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_13_mean,CN,1310,0,-0.5972,5.2636,-19.1545,18.723,-1.6397,-0.3205,98,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_13_std,AD,746,0,7.8752,2.021,3.7664,16.2949,0.2912,0.1505,99,spectral/cepstral,dimensionless (cepstral)
+test,mfcc_13_std,CN,1310,0,7.584,1.845,3.7457,14.7298,0.2912,0.1505,99,spectral/cepstral,dimensionless (cepstral)
+test,delta_mfcc_1_mean,AD,746,0,0.0031,0.7166,-3.3626,3.8151,0.0522,0.0757,100,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_1_mean,CN,1310,0,-0.0491,0.6623,-2.9885,2.5721,0.0522,0.0757,100,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_1_std,AD,746,0,10.5341,3.9396,2.9088,24.8166,0.6869,0.1785,101,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_1_std,CN,1310,0,9.8472,3.7544,2.5486,26.6206,0.6869,0.1785,101,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_2_mean,AD,746,0,0.0124,0.4521,-1.8036,1.9166,0.0188,0.0417,102,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_2_mean,CN,1310,0,-0.0064,0.4503,-2.1559,1.7937,0.0188,0.0417,102,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_2_std,AD,746,0,7.6306,2.8982,1.3639,16.9249,0.1816,0.064,103,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_2_std,CN,1310,0,7.449,2.7775,1.8274,21.7043,0.1816,0.064,103,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_3_mean,AD,746,0,-0.0009,0.2933,-1.1986,1.439,0.0052,0.0184,104,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_3_mean,CN,1310,0,-0.0061,0.2706,-1.838,1.1552,0.0052,0.0184,104,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_3_std,AD,746,0,5.1188,2.2821,1.1612,13.5237,0.4077,0.1904,105,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_3_std,CN,1310,0,4.7111,1.99,1.0576,13.0412,0.4077,0.1904,105,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_4_mean,AD,746,0,-0.0025,0.2767,-1.0137,1.1844,0.0007,0.0027,106,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_4_mean,CN,1310,0,-0.0032,0.2488,-1.276,0.8282,0.0007,0.0027,106,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_4_std,AD,746,0,4.6221,1.8223,1.4612,12.1183,0.3883,0.2347,107,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_4_std,CN,1310,0,4.2338,1.4677,1.1281,11.4435,0.3883,0.2347,107,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_5_mean,AD,746,0,0.0024,0.1904,-0.809,0.8175,0.0015,0.0081,108,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_5_mean,CN,1310,0,0.0009,0.1793,-0.9122,0.6571,0.0015,0.0081,108,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_5_std,AD,746,0,3.3485,1.2048,1.2094,7.464,0.1685,0.1458,109,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_5_std,CN,1310,0,3.18,1.1043,0.9644,8.1022,0.1685,0.1458,109,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_6_mean,AD,746,0,0.0112,0.179,-0.625,0.6736,0.0083,0.0489,110,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_6_mean,CN,1310,0,0.0029,0.1601,-0.6239,0.6683,0.0083,0.0489,110,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_6_std,AD,746,0,3.1358,1.0605,0.9818,7.1303,0.3664,0.3758,111,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_6_std,CN,1310,0,2.7694,0.881,0.9373,5.958,0.3664,0.3758,111,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_7_mean,AD,746,0,0.0035,0.1642,-0.7772,0.8596,-0.0072,-0.0466,112,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_7_mean,CN,1310,0,0.0107,0.1439,-0.4967,0.6341,-0.0072,-0.0466,112,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_7_std,AD,746,0,2.8155,0.9266,1.0855,5.6462,0.2151,0.2475,113,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_7_std,CN,1310,0,2.6004,0.8074,1.0269,7.3586,0.2151,0.2475,113,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_8_mean,AD,746,0,-0.0036,0.1429,-0.6008,0.6144,-0.0082,-0.0604,114,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_8_mean,CN,1310,0,0.0046,0.128,-0.4399,0.6339,-0.0082,-0.0604,114,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_8_std,AD,746,0,2.4172,0.7188,0.7974,4.8754,0.1187,0.1699,115,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_8_std,CN,1310,0,2.2985,0.6781,0.7688,5.6196,0.1187,0.1699,115,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_9_mean,AD,746,0,-0.0033,0.1337,-0.5959,0.5578,-0.0073,-0.058,116,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_9_mean,CN,1310,0,0.004,0.1176,-0.475,0.4695,-0.0073,-0.058,116,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_9_std,AD,746,0,2.2124,0.7366,0.9257,5.1456,0.1542,0.2278,117,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_9_std,CN,1310,0,2.0582,0.6117,0.7068,4.5977,0.1542,0.2278,117,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_10_mean,AD,746,0,-0.0053,0.1114,-0.3953,0.3866,-0.0106,-0.0984,118,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_10_mean,CN,1310,0,0.0053,0.104,-0.3582,0.4153,-0.0106,-0.0984,118,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_10_std,AD,746,0,1.9628,0.5929,0.8003,3.9551,0.1299,0.2374,119,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_10_std,CN,1310,0,1.8329,0.4971,0.6951,3.7868,0.1299,0.2374,119,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_11_mean,AD,746,0,-0.0041,0.0964,-0.3117,0.337,-0.0027,-0.0289,120,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_11_mean,CN,1310,0,-0.0014,0.0903,-0.3728,0.3033,-0.0027,-0.0289,120,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_11_std,AD,746,0,1.7419,0.4933,0.6612,3.2914,0.1104,0.2356,121,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_11_std,CN,1310,0,1.6315,0.4427,0.5816,3.9016,0.1104,0.2356,121,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_12_mean,AD,746,0,-0.0012,0.0954,-0.3874,0.3457,0.0008,0.0088,122,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_12_mean,CN,1310,0,-0.002,0.0854,-0.2672,0.2963,0.0008,0.0088,122,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_12_std,AD,746,0,1.6336,0.4959,0.6934,3.752,0.0883,0.1904,123,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_12_std,CN,1310,0,1.5453,0.429,0.5538,3.6923,0.0883,0.1904,123,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_13_mean,AD,746,0,-0.0007,0.0846,-0.2916,0.2111,0.0021,0.0254,124,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_13_mean,CN,1310,0,-0.0028,0.0806,-0.3385,0.3385,0.0021,0.0254,124,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_13_std,AD,746,0,1.4929,0.4258,0.6325,3.4911,0.0702,0.1743,125,spectral/cepstral,dimensionless (cepstral/frame)
+test,delta_mfcc_13_std,CN,1310,0,1.4227,0.3781,0.6079,2.8373,0.0702,0.1743,125,spectral/cepstral,dimensionless (cepstral/frame)
+test,alpha_ratio_mean,AD,746,0,27.918,7.0606,7.2898,44.3407,-0.5202,-0.0722,126,spectral/cepstral,dB (see caveat)
+test,alpha_ratio_mean,CN,1310,0,28.4382,7.3457,-10.9515,55.5825,-0.5202,-0.0722,126,spectral/cepstral,dB (see caveat)
+test,alpha_ratio_std,AD,746,0,16.7895,5.295,5.4491,34.1645,0.9,0.1686,127,spectral/cepstral,dB (see caveat)
+test,alpha_ratio_std,CN,1310,0,15.8895,5.3786,5.3281,46.1549,0.9,0.1686,127,spectral/cepstral,dB (see caveat)
+test,hammarberg_index_mean,AD,746,0,58.2237,13.9619,25.2966,103.0063,-5.8979,-0.3921,128,spectral/cepstral,dB (see caveat)
+test,hammarberg_index_mean,CN,1310,0,64.1216,16.0492,-2.569,112.1801,-5.8979,-0.3921,128,spectral/cepstral,dB (see caveat)
+test,hammarberg_index_std,AD,746,0,21.6659,7.3659,8.7588,43.8595,1.8671,0.2667,129,spectral/cepstral,dB (see caveat)
+test,hammarberg_index_std,CN,1310,0,19.7988,6.6141,5.64,51.3186,1.8671,0.2667,129,spectral/cepstral,dB (see caveat)
+test,spectral_flux_mean,AD,746,0,0.0695,0.0137,0.0428,0.1404,-0.0011,-0.0744,130,spectral/cepstral,dimensionless
+test,spectral_flux_mean,CN,1310,0,0.0706,0.0158,0.0404,0.1657,-0.0011,-0.0744,130,spectral/cepstral,dimensionless
+test,spectral_flux_std,AD,746,0,0.0278,0.0095,0.0111,0.0835,-0.0026,-0.239,131,spectral/cepstral,dimensionless
+test,spectral_flux_std,CN,1310,0,0.0304,0.0121,0.0091,0.1057,-0.0026,-0.239,131,spectral/cepstral,dimensionless
+test,spectral_slope_0_500_mean,AD,746,0,-0.0048,0.0268,-0.0644,0.0497,0.0078,0.2794,132,spectral/cepstral,dB/Hz
+test,spectral_slope_0_500_mean,CN,1310,0,-0.0126,0.029,-0.0823,0.0698,0.0078,0.2794,132,spectral/cepstral,dB/Hz
+test,spectral_slope_0_500_std,AD,746,0,0.0227,0.0053,0.0097,0.0415,0.0009,0.1698,133,spectral/cepstral,dB/Hz
+test,spectral_slope_0_500_std,CN,1310,0,0.0218,0.0053,0.0089,0.0587,0.0009,0.1698,133,spectral/cepstral,dB/Hz
+test,spectral_slope_500_1500_mean,AD,746,0,-0.0147,0.0042,-0.0278,-0.0007,-0.0006,-0.1412,134,spectral/cepstral,dB/Hz
+test,spectral_slope_500_1500_mean,CN,1310,0,-0.0141,0.0043,-0.0317,-0.0021,-0.0006,-0.1412,134,spectral/cepstral,dB/Hz
+test,spectral_slope_500_1500_std,AD,746,0,0.0095,0.0025,0.0039,0.02,0.0006,0.24,135,spectral/cepstral,dB/Hz
+test,spectral_slope_500_1500_std,CN,1310,0,0.0089,0.0025,0.0042,0.0306,0.0006,0.24,135,spectral/cepstral,dB/Hz
+train,f0_mean,AD,2883,0,184.3227,58.6455,84.8425,518.6033,-6.9323,-0.1162,1,prosodic,Hz
+train,f0_mean,CN,5349,0,191.255,60.6382,79.3815,510.3846,-6.9323,-0.1162,1,prosodic,Hz
+train,f0_std,AD,2883,0,77.0162,45.5498,4.014,220.1909,-9.7987,-0.2076,2,prosodic,Hz
+train,f0_std,CN,5349,0,86.8149,48.7961,1.734,236.1731,-9.7987,-0.2076,2,prosodic,Hz
+train,f0_min,AD,2883,0,93.6992,26.7808,74.9425,351.9799,-0.351,-0.0136,3,prosodic,Hz
+train,f0_min,CN,5349,0,94.0502,24.7785,74.9068,288.6582,-0.351,-0.0136,3,prosodic,Hz
+train,f0_max,AD,2883,0,468.661,150.8667,106.4248,599.9975,-28.5043,-0.1967,4,prosodic,Hz
+train,f0_max,CN,5349,0,497.1653,138.6916,93.817,599.9987,-28.5043,-0.1967,4,prosodic,Hz
+train,f0_kurtosis,AD,2883,0,10.6405,18.0808,-1.9515,290.5748,0.2644,0.0146,5,prosodic,dimensionless
+train,f0_kurtosis,CN,5349,0,10.3761,18.1093,-1.977,251.8291,0.2644,0.0146,5,prosodic,dimensionless
+train,f0_skewness,AD,2883,0,2.1595,2.1958,-2.7621,16.8573,-0.0943,-0.0441,6,prosodic,dimensionless
+train,f0_skewness,CN,5349,0,2.2538,2.0745,-2.8551,14.8444,-0.0943,-0.0441,6,prosodic,dimensionless
+train,f0_std_norm,AD,2883,0,0.4152,0.2172,0.0345,1.028,-0.0326,-0.1503,7,prosodic,dimensionless
+train,f0_std_norm,CN,5349,0,0.4478,0.2166,0.016,1.0995,-0.0326,-0.1503,7,prosodic,dimensionless
+train,intensity_mean,AD,2883,0,48.4163,11.581,17.971,77.3311,-2.4266,-0.2177,8,intensity/energy,dB SPL (Praat scale)
+train,intensity_mean,CN,5349,0,50.8429,10.6969,-4.8684,82.8802,-2.4266,-0.2177,8,intensity/energy,dB SPL (Praat scale)
+train,intensity_std,AD,2883,0,7.9384,3.2363,1.3174,18.866,0.9063,0.2417,9,intensity/energy,dB SPL (Praat scale)
+train,intensity_std,CN,5349,0,7.0321,4.2014,1.047,134.0794,0.9063,0.2417,9,intensity/energy,dB SPL (Praat scale)
+train,intensity_min,AD,2883,0,32.2771,12.3683,6.1957,69.0509,-1.6881,-0.1103,10,intensity/energy,dB SPL (Praat scale)
+train,intensity_min,CN,5349,0,33.9652,17.7665,-300.0,65.366,-1.6881,-0.1103,10,intensity/energy,dB SPL (Praat scale)
+train,intensity_max,AD,2883,0,65.4467,10.373,33.2985,90.3692,-0.0904,-0.0088,11,intensity/energy,dB SPL (Praat scale)
+train,intensity_max,CN,5349,0,65.5371,10.1389,22.6597,92.2654,-0.0904,-0.0088,11,intensity/energy,dB SPL (Praat scale)
+train,intensity_kurtosis,AD,2883,0,-0.509,0.8943,-1.7463,13.2104,-0.2771,-0.2214,12,intensity/energy,dimensionless
+train,intensity_kurtosis,CN,5349,0,-0.2319,1.5271,-1.7721,48.8899,-0.2771,-0.2214,12,intensity/energy,dimensionless
+train,intensity_skewness,AD,2883,0,-0.0024,0.5095,-1.6902,3.4425,0.1382,0.2523,13,intensity/energy,dimensionless
+train,intensity_skewness,CN,5349,0,-0.1406,0.5837,-6.7337,2.6518,0.1382,0.2523,13,intensity/energy,dimensionless
+train,energy_mean,AD,2883,0,0.0183,0.0234,0.0002,0.1604,-0.0025,-0.1002,14,intensity/energy,normalised amplitude
+train,energy_mean,CN,5349,0,0.0208,0.0264,0.0001,0.3242,-0.0025,-0.1002,14,intensity/energy,normalised amplitude
+train,energy_std,AD,2883,0,0.0141,0.0174,0.0002,0.1178,-0.0002,-0.0107,15,intensity/energy,normalised amplitude
+train,energy_std,CN,5349,0,0.0143,0.0198,0.0,0.2524,-0.0002,-0.0107,15,intensity/energy,normalised amplitude
+train,energy_min,AD,2883,0,0.0027,0.0045,0.0,0.0594,-0.0003,-0.0744,16,intensity/energy,normalised amplitude
+train,energy_min,CN,5349,0,0.003,0.0035,0.0,0.0396,-0.0003,-0.0744,16,intensity/energy,normalised amplitude
+train,energy_max,AD,2883,0,0.0732,0.0848,0.0009,0.7412,-0.0025,-0.0277,17,intensity/energy,normalised amplitude
+train,energy_max,CN,5349,0,0.0757,0.0955,0.0003,0.7778,-0.0025,-0.0277,17,intensity/energy,normalised amplitude
+train,energy_kurtosis,AD,2883,0,4.3088,7.1679,-1.4731,88.2744,0.854,0.1261,18,intensity/energy,dimensionless
+train,energy_kurtosis,CN,5349,0,3.4548,6.3487,-1.5128,79.4284,0.854,0.1261,18,intensity/energy,dimensionless
+train,energy_skewness,AD,2883,0,1.6565,1.0775,-0.5288,9.0293,0.2519,0.238,19,intensity/energy,dimensionless
+train,energy_skewness,CN,5349,0,1.4046,1.0389,-0.967,8.0938,0.2519,0.238,19,intensity/energy,dimensionless
+train,mean_pause_duration,AD,2883,0,0.389,0.4443,0.0,4.98,0.0389,0.0899,20,temporal/fluency,s
+train,mean_pause_duration,CN,5349,0,0.3501,0.4209,0.0,4.98,0.0389,0.0899,20,temporal/fluency,s
+train,total_speech_time,AD,2883,0,3.4114,1.2386,0.08,5.0,-0.1242,-0.102,21,temporal/fluency,s
+train,total_speech_time,CN,5349,0,3.5356,1.1971,0.08,5.0,-0.1242,-0.102,21,temporal/fluency,s
+train,total_pause_time,AD,2883,0,1.4489,1.2123,0.0,4.98,0.1335,0.1125,22,temporal/fluency,s
+train,total_pause_time,CN,5349,0,1.3154,1.1597,0.0,4.98,0.1335,0.1125,22,temporal/fluency,s
+train,pause_percentage,AD,2883,0,29.8632,24.8562,0.0,99.9454,2.6876,0.1102,23,temporal/fluency,%
+train,pause_percentage,CN,5349,0,27.1756,23.902,0.0,99.9466,2.6876,0.1102,23,temporal/fluency,%
+train,silence_to_speech_ratio,AD,2883,0,1.2074,4.0563,0.0,61.25,0.1922,0.05,24,temporal/fluency,ratio
+train,silence_to_speech_ratio,CN,5349,0,1.0152,3.6247,0.0,61.25,0.1922,0.05,24,temporal/fluency,ratio
+train,pause_variability,AD,2883,0,0.1923,0.2361,0.0,2.04,0.0238,0.1062,25,temporal/fluency,s
+train,pause_variability,CN,5349,0,0.1685,0.2114,0.0,2.22,0.0238,0.1062,25,temporal/fluency,s
+train,number_of_pauses,AD,2883,0,3.7232,2.2311,0.0,11.0,0.1117,0.0488,26,temporal/fluency,count
+train,number_of_pauses,CN,5349,0,3.6115,2.3492,0.0,15.0,0.1117,0.0488,26,temporal/fluency,count
+train,number_of_speech_segments,AD,2883,0,4.2948,2.0797,0.0,12.0,0.0396,0.0186,27,temporal/fluency,count
+train,number_of_speech_segments,CN,5349,0,4.2552,2.1879,0.0,14.0,0.0396,0.0186,27,temporal/fluency,count
+train,max_pause_duration,AD,2883,0,0.6839,0.6836,0.0,4.98,0.0747,0.1136,28,temporal/fluency,s
+train,max_pause_duration,CN,5349,0,0.6092,0.6299,0.0,4.98,0.0747,0.1136,28,temporal/fluency,s
+train,min_pause_duration,AD,2883,0,0.1985,0.3779,0.0,4.98,0.0157,0.0425,29,temporal/fluency,s
+train,min_pause_duration,CN,5349,0,0.1828,0.3612,0.0,4.98,0.0157,0.0425,29,temporal/fluency,s
+train,pause_rate,AD,2883,0,0.7672,0.458,0.0,2.4,0.0219,0.0465,30,temporal/fluency,pauses/s
+train,pause_rate,CN,5349,0,0.7453,0.4831,0.0,3.0,0.0219,0.0465,30,temporal/fluency,pauses/s
+train,mean_speech_segment_duration,AD,2883,0,1.1999,1.1807,0.08,5.0,-0.1122,-0.0913,31,temporal/fluency,s
+train,mean_speech_segment_duration,CN,5349,0,1.3121,1.2743,0.06,5.0,-0.1122,-0.0913,31,temporal/fluency,s
+train,std_speech_segment_duration,AD,2883,0,0.6153,0.5334,0.0,2.38,-0.0296,-0.0539,32,temporal/fluency,s
+train,std_speech_segment_duration,CN,5349,0,0.6449,0.5648,0.0,2.4,-0.0296,-0.0539,32,temporal/fluency,s
+train,mean_inter_pause_interval,AD,2883,0,0.6487,0.7169,0.0,4.46,0.012,0.0165,33,temporal/fluency,s
+train,mean_inter_pause_interval,CN,5349,0,0.6367,0.7362,0.0,4.46,0.012,0.0165,33,temporal/fluency,s
+train,std_inter_pause_interval,AD,2883,0,0.227,0.304,0.0,2.02,0.0078,0.0257,34,temporal/fluency,s
+train,std_inter_pause_interval,CN,5349,0,0.2192,0.3027,0.0,1.96,0.0078,0.0257,34,temporal/fluency,s
+train,long_pause_count,AD,2883,0,0.8137,0.9993,0.0,5.0,0.1076,0.1099,35,temporal/fluency,count
+train,long_pause_count,CN,5349,0,0.7061,0.9587,0.0,5.0,0.1076,0.1099,35,temporal/fluency,count
+train,short_pause_count,AD,2883,0,2.9095,2.0333,0.0,11.0,0.0041,0.002,36,temporal/fluency,count
+train,short_pause_count,CN,5349,0,2.9054,2.1232,0.0,14.0,0.0041,0.002,36,temporal/fluency,count
+train,pause_duration_skewness,AD,2881,2,0.3614,0.5671,-1.4397,2.4723,0.0094,0.0167,37,temporal/fluency,dimensionless
+train,pause_duration_skewness,CN,5342,7,0.352,0.5587,-1.3794,2.3942,0.0094,0.0167,37,temporal/fluency,dimensionless
+train,speech_rate,AD,2883,0,3.6875,1.0632,0.3378,6.4,-0.1578,-0.146,38,articulatory,syllables/s
+train,speech_rate,CN,5349,0,3.8453,1.0975,0.2,6.5954,-0.1578,-0.146,38,articulatory,syllables/s
+train,articulation_rate,AD,2883,0,3.8657,1.0195,0.3378,6.4897,-0.0694,-0.0666,39,articulatory,syllables/s
+train,articulation_rate,CN,5349,0,3.9351,1.0632,0.2,6.5954,-0.0694,-0.0666,39,articulatory,syllables/s
+train,avg_syllable_duration,AD,2883,0,0.2885,0.1426,0.1541,2.9606,-0.0049,-0.0256,40,articulatory,s
+train,avg_syllable_duration,CN,5349,0,0.2934,0.2307,0.1516,5.0,-0.0049,-0.0256,40,articulatory,s
+train,f1_std,AD,2883,0,363.7164,123.7781,72.5917,728.8119,-24.0337,-0.1948,41,articulatory,Hz
+train,f1_std,CN,5349,0,387.7501,122.9495,92.5895,785.7193,-24.0337,-0.1948,41,articulatory,Hz
+train,f2_std,AD,2883,0,466.9363,86.9216,175.9378,733.2989,-9.7084,-0.1138,42,articulatory,Hz
+train,f2_std,CN,5349,0,476.6447,83.7107,198.774,851.1538,-9.7084,-0.1138,42,articulatory,Hz
+train,vocal_tract_length,AD,2883,0,15.2222,2.7125,10.6639,45.6866,0.1923,0.0867,43,articulatory,cm
+train,vocal_tract_length,CN,5349,0,15.0299,1.5742,11.1657,31.0954,0.1923,0.0867,43,articulatory,cm
+train,jitter_local_mean,AD,2883,0,0.0353,0.0147,0.0101,0.1205,-0.003,-0.1856,44,phonatory,fraction (0-1)
+train,jitter_local_mean,CN,5347,2,0.0383,0.0175,0.0087,0.1355,-0.003,-0.1856,44,phonatory,fraction (0-1)
+train,jitter_local_std,AD,2883,0,0.0122,0.0068,0.0013,0.0567,-0.0008,-0.1109,45,phonatory,fraction (0-1)
+train,jitter_local_std,CN,5347,2,0.013,0.0076,0.0016,0.0886,-0.0008,-0.1109,45,phonatory,fraction (0-1)
+train,jitter_local_min,AD,2883,0,0.0194,0.0104,0.0009,0.098,-0.0018,-0.1565,46,phonatory,fraction (0-1)
+train,jitter_local_min,CN,5347,2,0.0212,0.0125,0.0026,0.1024,-0.0018,-0.1565,46,phonatory,fraction (0-1)
+train,jitter_local_max,AD,2883,0,0.0578,0.0253,0.0146,0.1992,-0.0042,-0.1562,47,phonatory,fraction (0-1)
+train,jitter_local_max,CN,5347,2,0.062,0.0284,0.012,0.2656,-0.0042,-0.1562,47,phonatory,fraction (0-1)
+train,jitter_local_kurtosis,AD,2883,0,-0.4769,0.9715,-2.0,3.9796,0.0456,0.048,48,phonatory,dimensionless
+train,jitter_local_kurtosis,CN,5347,2,-0.5225,0.9268,-2.0,4.0825,0.0456,0.048,48,phonatory,dimensionless
+train,jitter_local_skewness,AD,2883,0,0.4303,0.6509,-2.0856,2.4243,0.0131,0.0203,49,phonatory,dimensionless
+train,jitter_local_skewness,CN,5347,2,0.4172,0.6398,-1.9863,2.4598,0.0131,0.0203,49,phonatory,dimensionless
+train,jitter_ddp_mean,AD,2883,0,0.0542,0.0246,0.0126,0.1944,-0.0048,-0.1778,50,phonatory,fraction (0-1)
+train,jitter_ddp_mean,CN,5347,2,0.059,0.0292,0.011,0.2314,-0.0048,-0.1778,50,phonatory,fraction (0-1)
+train,jitter_ddp_std,AD,2883,0,0.0207,0.0122,0.0,0.0978,-0.0015,-0.1156,51,phonatory,fraction (0-1)
+train,jitter_ddp_std,CN,5347,2,0.0222,0.0137,0.0019,0.1509,-0.0015,-0.1156,51,phonatory,fraction (0-1)
+train,jitter_ddp_min,AD,2883,0,0.0276,0.0166,0.0008,0.1639,-0.0028,-0.1537,52,phonatory,fraction (0-1)
+train,jitter_ddp_min,CN,5347,2,0.0304,0.0197,0.001,0.1633,-0.0028,-0.1537,52,phonatory,fraction (0-1)
+train,jitter_ddp_max,AD,2883,0,0.0927,0.0444,0.0184,0.3522,-0.0071,-0.1493,53,phonatory,fraction (0-1)
+train,jitter_ddp_max,CN,5347,2,0.0998,0.0505,0.0145,0.5781,-0.0071,-0.1493,53,phonatory,fraction (0-1)
+train,jitter_ddp_kurtosis,AD,2883,0,-0.4565,0.9999,-1.9977,4.0103,0.0329,0.0333,54,phonatory,dimensionless
+train,jitter_ddp_kurtosis,CN,5347,2,-0.4894,0.9758,-2.0,4.0722,0.0329,0.0333,54,phonatory,dimensionless
+train,jitter_ddp_skewness,AD,2883,0,0.4617,0.6533,-1.8995,2.4332,0.0055,0.0085,55,phonatory,dimensionless
+train,jitter_ddp_skewness,CN,5347,2,0.4562,0.6469,-2.1404,2.4564,0.0055,0.0085,55,phonatory,dimensionless
+train,shimmer_local_mean,AD,2883,0,0.1626,0.0354,0.0521,0.2699,-0.0005,-0.0139,56,phonatory,fraction (0-1)
+train,shimmer_local_mean,CN,5346,3,0.1631,0.0366,0.0602,0.3007,-0.0005,-0.0139,56,phonatory,fraction (0-1)
+train,shimmer_local_std,AD,2883,0,0.0273,0.0129,0.0,0.1397,0.0012,0.0923,57,phonatory,fraction (0-1)
+train,shimmer_local_std,CN,5346,3,0.0261,0.0131,0.0034,0.1913,0.0012,0.0923,57,phonatory,fraction (0-1)
+train,shimmer_local_min,AD,2883,0,0.1233,0.0353,0.0104,0.2447,-0.0016,-0.0446,58,phonatory,fraction (0-1)
+train,shimmer_local_min,CN,5346,3,0.1249,0.0365,0.0038,0.249,-0.0016,-0.0446,58,phonatory,fraction (0-1)
+train,shimmer_local_max,AD,2883,0,0.2101,0.0496,0.0592,0.6208,0.0029,0.0582,59,phonatory,fraction (0-1)
+train,shimmer_local_max,CN,5346,3,0.2072,0.0501,0.0735,0.6854,0.0029,0.0582,59,phonatory,fraction (0-1)
+train,shimmer_local_kurtosis,AD,2883,0,-0.5493,0.8937,-1.9998,3.7782,0.0677,0.0784,60,phonatory,dimensionless
+train,shimmer_local_kurtosis,CN,5346,3,-0.617,0.8329,-2.0,3.9394,0.0677,0.0784,60,phonatory,dimensionless
+train,shimmer_local_skewness,AD,2883,0,0.2156,0.6693,-2.1969,2.3504,0.0577,0.0877,61,phonatory,dimensionless
+train,shimmer_local_skewness,CN,5346,3,0.1579,0.6463,-2.1347,2.4127,0.0577,0.0877,61,phonatory,dimensionless
+train,shimmer_apq3_mean,AD,2883,0,0.075,0.0219,0.02,0.1691,-0.0005,-0.0226,62,phonatory,fraction (0-1)
+train,shimmer_apq3_mean,CN,5345,4,0.0755,0.0223,0.021,0.2378,-0.0005,-0.0226,62,phonatory,fraction (0-1)
+train,shimmer_apq3_std,AD,2883,0,0.0168,0.0091,0.0,0.139,0.0009,0.0968,63,phonatory,fraction (0-1)
+train,shimmer_apq3_std,CN,5345,4,0.0159,0.0095,0.0,0.1496,0.0009,0.0968,63,phonatory,fraction (0-1)
+train,shimmer_apq3_min,AD,2883,0,0.0518,0.019,0.0014,0.1245,-0.0016,-0.084,64,phonatory,fraction (0-1)
+train,shimmer_apq3_min,CN,5345,4,0.0534,0.0191,0.0,0.1312,-0.0016,-0.084,64,phonatory,fraction (0-1)
+train,shimmer_apq3_max,AD,2883,0,0.1055,0.0358,0.0265,0.5312,0.0017,0.0474,65,phonatory,fraction (0-1)
+train,shimmer_apq3_max,CN,5345,4,0.1038,0.0359,0.0282,0.5279,0.0017,0.0474,65,phonatory,fraction (0-1)
+train,shimmer_apq3_kurtosis,AD,2883,0,-0.4982,0.9543,-1.9998,3.9794,0.0477,0.0514,66,phonatory,dimensionless
+train,shimmer_apq3_kurtosis,CN,5345,4,-0.5459,0.9017,-2.0,3.9776,0.0477,0.0514,66,phonatory,dimensionless
+train,shimmer_apq3_skewness,AD,2883,0,0.3207,0.6709,-1.8298,2.4238,0.0264,0.0398,67,phonatory,dimensionless
+train,shimmer_apq3_skewness,CN,5345,4,0.2943,0.6561,-2.1584,2.4223,0.0264,0.0398,67,phonatory,dimensionless
+train,hnr_mean,AD,2883,0,9.01,3.6495,-1.6324,28.7937,0.5351,0.15,68,phonatory,dB
+train,hnr_mean,CN,5348,1,8.4749,3.483,-3.666,25.8897,0.5351,0.15,68,phonatory,dB
+train,hnr_std,AD,2883,0,5.1724,0.9978,0.9834,13.0977,-0.1125,-0.1115,69,phonatory,dB
+train,hnr_std,CN,5348,1,5.2849,1.0203,0.8734,11.9043,-0.1125,-0.1115,69,phonatory,dB
+train,hnr_min,AD,2883,0,-4.5424,5.0157,-35.1082,22.0789,1.265,0.2371,70,phonatory,dB
+train,hnr_min,CN,5348,1,-5.8074,5.637,-40.5296,14.4971,1.265,0.2371,70,phonatory,dB
+train,hnr_max,AD,2883,0,22.1405,4.7091,3.0583,43.6856,-0.0964,-0.0207,71,phonatory,dB
+train,hnr_max,CN,5348,1,22.2369,4.5884,1.0113,51.4931,-0.0964,-0.0207,71,phonatory,dB
+train,hnr_kurtosis,AD,2883,0,-0.082,1.1417,-1.6322,26.7429,-0.0868,-0.083,72,phonatory,dimensionless
+train,hnr_kurtosis,CN,5348,1,0.0048,0.9391,-2.0,13.5906,-0.0868,-0.083,72,phonatory,dimensionless
+train,hnr_skewness,AD,2883,0,0.0129,0.4323,-3.6192,3.4773,-0.0208,-0.0475,73,phonatory,dimensionless
+train,hnr_skewness,CN,5348,1,0.0337,0.4426,-2.0319,2.677,-0.0208,-0.0475,73,phonatory,dimensionless
+train,mfcc_1_mean,AD,2883,0,-446.572,124.9409,-755.6394,-97.908,-21.7537,-0.1842,74,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_1_mean,CN,5349,0,-424.8183,110.7993,-876.0121,8.8819,-21.7537,-0.1842,74,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_1_std,AD,2883,0,56.0945,19.092,12.6733,148.6302,2.9647,0.15,75,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_1_std,CN,5349,0,53.1298,20.4039,14.4019,181.7004,2.9647,0.15,75,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_2_mean,AD,2883,0,110.9166,22.4823,32.5803,229.7028,-0.2963,-0.014,76,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_2_mean,CN,5349,0,111.2129,19.8341,37.2432,203.7139,-0.2963,-0.014,76,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_2_std,AD,2883,0,38.158,12.5564,10.1146,93.3693,1.3631,0.1052,77,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_2_std,CN,5349,0,36.7949,13.3354,8.854,102.1447,1.3631,0.1052,77,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_3_mean,AD,2883,0,12.9414,21.1838,-92.4126,63.5447,-2.4373,-0.132,78,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_3_mean,CN,5349,0,15.3787,15.2598,-76.5352,68.2354,-2.4373,-0.132,78,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_3_std,AD,2883,0,24.6226,9.471,6.8361,64.0312,1.2911,0.1353,79,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_3_std,CN,5349,0,23.3315,9.6199,5.3336,66.674,1.2911,0.1353,79,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_4_mean,AD,2883,0,21.4837,13.4637,-17.0866,76.1961,-0.9461,-0.073,80,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_4_mean,CN,5349,0,22.4298,12.4298,-30.5219,70.5675,-0.9461,-0.073,80,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_4_std,AD,2883,0,22.904,7.366,6.351,57.1091,1.1225,0.1511,81,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_4_std,CN,5349,0,21.7815,7.496,5.7509,55.1319,1.1225,0.1511,81,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_5_mean,AD,2883,0,-0.7627,14.5153,-68.5826,29.269,-3.485,-0.2635,82,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_5_mean,CN,5349,0,2.7223,11.7909,-51.9245,35.3531,-3.485,-0.2635,82,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_5_std,AD,2883,0,16.6926,5.1388,5.0611,35.7029,0.8701,0.1661,83,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_5_std,CN,5349,0,15.8225,5.3349,4.9184,43.2692,0.8701,0.1661,83,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_6_mean,AD,2883,0,0.5034,10.0272,-44.734,27.1572,-1.808,-0.1852,84,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_6_mean,CN,5349,0,2.3114,9.4896,-47.3872,27.1833,-1.808,-0.1852,84,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_6_std,AD,2883,0,15.5168,4.8398,5.2166,40.3604,1.1278,0.2443,85,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_6_std,CN,5349,0,14.389,4.3808,4.3666,33.3702,1.1278,0.2443,85,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_7_mean,AD,2883,0,-8.9325,9.8936,-46.7952,17.6097,-2.5439,-0.2732,86,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_7_mean,CN,5349,0,-6.3886,8.6938,-50.8147,18.716,-2.5439,-0.2732,86,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_7_std,AD,2883,0,14.2522,4.0657,4.9882,35.7054,0.963,0.243,87,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_7_std,CN,5349,0,13.2892,3.8572,4.5343,28.949,0.963,0.243,87,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_8_mean,AD,2883,0,0.1322,7.3745,-34.2331,21.6598,-0.9081,-0.1122,88,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_8_mean,CN,5349,0,1.0403,8.7582,-46.6577,24.8326,-0.9081,-0.1122,88,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_8_std,AD,2883,0,12.4395,3.1433,4.6105,27.8935,0.649,0.2057,89,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_8_std,CN,5349,0,11.7905,3.1672,4.2884,25.0221,0.649,0.2057,89,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_9_mean,AD,2883,0,-3.5344,7.7943,-38.3351,17.3486,-1.9366,-0.2274,90,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_9_mean,CN,5349,0,-1.5978,9.1789,-44.1877,20.6586,-1.9366,-0.2274,90,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_9_std,AD,2883,0,11.3972,3.0769,4.0953,29.8587,0.7212,0.2432,91,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_9_std,CN,5349,0,10.676,2.8501,4.0775,23.1697,0.7212,0.2432,91,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_10_mean,AD,2883,0,0.41,6.1337,-23.226,18.889,-1.2293,-0.1892,92,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_10_mean,CN,5349,0,1.6393,6.8439,-28.3048,21.2156,-1.2293,-0.1892,92,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_10_std,AD,2883,0,10.0285,2.5513,3.7993,21.2337,0.5716,0.2257,93,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_10_std,CN,5349,0,9.4569,2.513,4.0317,23.4153,0.5716,0.2257,93,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_11_mean,AD,2883,0,-4.0161,4.8732,-33.404,13.6724,-1.2509,-0.2441,94,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_11_mean,CN,5349,0,-2.7652,5.3658,-31.3009,15.1125,-1.2509,-0.2441,94,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_11_std,AD,2883,0,9.0989,2.2643,3.966,19.6593,0.536,0.2409,95,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_11_std,CN,5349,0,8.5629,2.1856,3.7365,18.7506,0.536,0.2409,95,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_12_mean,AD,2883,0,0.1437,6.3958,-26.3863,21.744,-2.0453,-0.3146,96,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_12_mean,CN,5349,0,2.189,6.6043,-23.6756,25.8522,-2.0453,-0.3146,96,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_12_std,AD,2883,0,8.4125,2.1368,3.8289,21.8208,0.4746,0.2279,97,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_12_std,CN,5349,0,7.9379,2.0276,3.5525,17.7432,0.4746,0.2279,97,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_13_mean,AD,2883,0,-1.8285,4.7946,-18.3783,16.0884,-1.2357,-0.2512,98,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_13_mean,CN,5349,0,-0.5928,5.0394,-20.9438,20.2035,-1.2357,-0.2512,98,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_13_std,AD,2883,0,7.8379,2.0107,3.6881,20.6077,0.4158,0.2117,99,spectral/cepstral,dimensionless (cepstral)
+train,mfcc_13_std,CN,5349,0,7.4221,1.9161,3.3908,21.2514,0.4158,0.2117,99,spectral/cepstral,dimensionless (cepstral)
+train,delta_mfcc_1_mean,AD,2883,0,0.0046,0.7011,-3.1636,3.1537,0.0262,0.038,100,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_1_mean,CN,5349,0,-0.0216,0.6771,-3.8238,4.3978,0.0262,0.038,100,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_1_std,AD,2883,0,10.2776,3.6352,1.9839,26.6554,0.4806,0.1273,101,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_1_std,CN,5349,0,9.797,3.9104,1.8052,32.4132,0.4806,0.1273,101,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_2_mean,AD,2883,0,-0.0024,0.4271,-2.1414,2.7086,0.0011,0.0026,102,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_2_mean,CN,5349,0,-0.0035,0.4242,-2.3158,3.1493,0.0011,0.0026,102,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_2_std,AD,2883,0,7.5871,2.6141,1.9416,18.5258,0.2965,0.1093,103,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_2_std,CN,5349,0,7.2906,2.8075,1.655,21.746,0.2965,0.1093,103,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_3_mean,AD,2883,0,0.0019,0.2739,-1.1387,1.1353,-0.0024,-0.0088,104,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_3_mean,CN,5349,0,0.0043,0.2746,-1.6935,1.7062,-0.0024,-0.0088,104,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_3_std,AD,2883,0,4.8638,1.9864,1.3668,13.4063,0.1975,0.0977,105,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_3_std,CN,5349,0,4.6663,2.0579,0.9985,14.5021,0.1975,0.0977,105,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_4_mean,AD,2883,0,-0.0009,0.2545,-1.0299,1.1098,-0.0011,-0.0044,106,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_4_mean,CN,5349,0,0.0002,0.2435,-1.4256,1.1019,-0.0011,-0.0044,106,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_4_std,AD,2883,0,4.4289,1.5489,1.2096,10.5819,0.2072,0.1339,107,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_4_std,CN,5349,0,4.2217,1.5469,0.9384,12.0584,0.2072,0.1339,107,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_5_mean,AD,2883,0,-0.0017,0.1886,-0.8846,0.7965,-0.0087,-0.0471,108,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_5_mean,CN,5349,0,0.007,0.1809,-0.8147,1.0189,-0.0087,-0.0471,108,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_5_std,AD,2883,0,3.2785,1.0703,0.9772,7.3337,0.145,0.1321,109,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_5_std,CN,5349,0,3.1335,1.1248,0.773,9.0691,0.145,0.1321,109,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_6_mean,AD,2883,0,0.0047,0.1722,-1.0309,0.934,-0.0004,-0.0024,110,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_6_mean,CN,5349,0,0.0051,0.1602,-0.6819,0.8348,-0.0004,-0.0024,110,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_6_std,AD,2883,0,3.0463,1.0135,0.8399,8.3447,0.2511,0.2583,111,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_6_std,CN,5349,0,2.7952,0.9292,0.6934,6.4218,0.2511,0.2583,111,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_7_mean,AD,2883,0,-0.0016,0.1523,-0.8489,0.6483,-0.0015,-0.01,112,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_7_mean,CN,5349,0,-0.0001,0.1474,-0.9365,0.7443,-0.0015,-0.01,112,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_7_std,AD,2883,0,2.7229,0.8469,0.9047,6.1628,0.1823,0.2201,113,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_7_std,CN,5349,0,2.5406,0.8093,0.8228,6.2043,0.1823,0.2201,113,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_8_mean,AD,2883,0,-0.0005,0.1338,-0.5785,0.6848,-0.0016,-0.0122,114,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_8_mean,CN,5349,0,0.0011,0.1291,-0.614,0.6406,-0.0016,-0.0122,114,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_8_std,AD,2883,0,2.3877,0.6622,0.8848,4.9369,0.1555,0.2343,115,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_8_std,CN,5349,0,2.2322,0.6653,0.7324,5.295,0.1555,0.2343,115,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_9_mean,AD,2883,0,0.0022,0.126,-0.592,0.6131,0.0,0.0,116,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_9_mean,CN,5349,0,0.0022,0.1163,-0.5015,0.6605,0.0,0.0,116,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_9_std,AD,2883,0,2.1512,0.6474,0.555,6.5044,0.1382,0.2223,117,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_9_std,CN,5349,0,2.013,0.5947,0.6619,4.8745,0.1382,0.2223,117,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_10_mean,AD,2883,0,-0.0027,0.11,-0.5387,0.4361,-0.0044,-0.041,118,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_10_mean,CN,5349,0,0.0017,0.1043,-0.5434,0.4434,-0.0044,-0.041,118,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_10_std,AD,2883,0,1.9106,0.5263,0.6439,4.1429,0.1145,0.2184,119,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_10_std,CN,5349,0,1.7961,0.5221,0.727,4.3371,0.1145,0.2184,119,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_11_mean,AD,2883,0,-0.0003,0.0977,-0.3466,0.4627,0.0008,0.0084,120,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_11_mean,CN,5349,0,-0.0011,0.0929,-0.5328,0.447,0.0008,0.0084,120,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_11_std,AD,2883,0,1.7355,0.474,0.6433,4.2401,0.107,0.2308,121,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_11_std,CN,5349,0,1.6285,0.4528,0.6579,3.5114,0.107,0.2308,121,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_12_mean,AD,2883,0,-0.0002,0.0901,-0.4382,0.5634,-0.0001,-0.0011,122,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_12_mean,CN,5349,0,-0.0001,0.0853,-0.3772,0.4039,-0.0001,-0.0011,122,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_12_std,AD,2883,0,1.6094,0.4478,0.6608,3.8494,0.0931,0.2121,123,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_12_std,CN,5349,0,1.5163,0.4297,0.5955,3.6532,0.0931,0.2121,123,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_13_mean,AD,2883,0,0.0001,0.0811,-0.3667,0.4474,0.0004,0.005,124,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_13_mean,CN,5349,0,-0.0003,0.08,-0.4068,0.4618,0.0004,0.005,124,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_13_std,AD,2883,0,1.4835,0.4196,0.6207,4.4193,0.0876,0.2156,125,spectral/cepstral,dimensionless (cepstral/frame)
+train,delta_mfcc_13_std,CN,5349,0,1.3959,0.3924,0.4421,3.2164,0.0876,0.2156,125,spectral/cepstral,dimensionless (cepstral/frame)
+train,alpha_ratio_mean,AD,2883,0,27.8118,8.5484,-3.6622,56.698,-0.5919,-0.0736,126,spectral/cepstral,dB (see caveat)
+train,alpha_ratio_mean,CN,5349,0,28.4037,7.4937,-6.1495,66.5486,-0.5919,-0.0736,126,spectral/cepstral,dB (see caveat)
+train,alpha_ratio_std,AD,2883,0,16.5147,5.417,5.2811,42.1745,1.0032,0.1832,127,spectral/cepstral,dB (see caveat)
+train,alpha_ratio_std,CN,5349,0,15.5115,5.536,4.6533,49.5148,1.0032,0.1832,127,spectral/cepstral,dB (see caveat)
+train,hammarberg_index_mean,AD,2883,0,58.2649,17.0517,12.6844,122.2036,-5.1885,-0.3184,128,spectral/cepstral,dB (see caveat)
+train,hammarberg_index_mean,CN,5349,0,63.4534,15.5017,15.729,110.7309,-5.1885,-0.3184,128,spectral/cepstral,dB (see caveat)
+train,hammarberg_index_std,AD,2883,0,21.3731,7.946,4.265,67.9193,1.9727,0.2664,129,spectral/cepstral,dB (see caveat)
+train,hammarberg_index_std,CN,5349,0,19.4004,6.8207,5.4783,54.7283,1.9727,0.2664,129,spectral/cepstral,dB (see caveat)
+train,spectral_flux_mean,AD,2883,0,0.0672,0.0144,0.0327,0.1702,-0.0044,-0.2822,130,spectral/cepstral,dimensionless
+train,spectral_flux_mean,CN,5349,0,0.0716,0.0167,0.0316,0.1872,-0.0044,-0.2822,130,spectral/cepstral,dimensionless
+train,spectral_flux_std,AD,2883,0,0.0268,0.0101,0.0066,0.1037,-0.003,-0.2772,131,spectral/cepstral,dimensionless
+train,spectral_flux_std,CN,5349,0,0.0298,0.0115,0.0082,0.1266,-0.003,-0.2772,131,spectral/cepstral,dimensionless
+train,spectral_slope_0_500_mean,AD,2883,0,-0.003,0.029,-0.0853,0.076,0.011,0.38,132,spectral/cepstral,dB/Hz
+train,spectral_slope_0_500_mean,CN,5349,0,-0.014,0.0289,-0.0762,0.0698,0.011,0.38,132,spectral/cepstral,dB/Hz
+train,spectral_slope_0_500_std,AD,2883,0,0.0224,0.005,0.008,0.045,0.0009,0.1782,133,spectral/cepstral,dB/Hz
+train,spectral_slope_0_500_std,CN,5349,0,0.0215,0.0051,0.0086,0.0543,0.0009,0.1782,133,spectral/cepstral,dB/Hz
+train,spectral_slope_500_1500_mean,AD,2883,0,-0.0147,0.0053,-0.0537,0.0002,-0.0006,-0.1255,134,spectral/cepstral,dB/Hz
+train,spectral_slope_500_1500_mean,CN,5349,0,-0.0141,0.0042,-0.0365,0.0009,-0.0006,-0.1255,134,spectral/cepstral,dB/Hz
+train,spectral_slope_500_1500_std,AD,2883,0,0.0093,0.0028,0.0039,0.029,0.0004,0.1507,135,spectral/cepstral,dB/Hz
+train,spectral_slope_500_1500_std,CN,5349,0,0.0089,0.0025,0.0037,0.0264,0.0004,0.1507,135,spectral/cepstral,dB/Hz

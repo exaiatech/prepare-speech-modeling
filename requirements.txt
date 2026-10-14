@@ -1,0 +1,38 @@
+# Packages imported by features.ipynb, pinned to the versions installed in the
+# environment this repository was restructured in (2026-07-30).
+#
+# Section 1 - required by the acoustic branch (Step1, Step2, Step3). The Step6 modelling scripts are set aside.
+pandas==3.0.1
+numpy==2.3.5
+scipy==1.17.0
+scikit-learn==1.8.0
+librosa==0.11.0
+praat-parselmouth==0.4.7
+webrtcvad-wheels==2.0.14        # imported as `webrtcvad`
+soundfile==0.13.1
+matplotlib==3.10.8
+joblib==1.5.3
+shap==0.52.0
+PyYAML==6.0.3                   # added by the refactor: config.yaml loading
+
+# Section 2 - required by the ASR branch (Step4)
+faster-whisper==1.2.1           # Step4b transcription
+torch==2.10.0                   # Step4a, Silero VAD via torch.hub
+spacy==3.8.13                   # Step4e error categorisation
+XlsxWriter==3.2.9               # Step4e master report
+# spacy additionally needs:  python -m spacy download en_core_web_sm
+# Step4a downloads Silero VAD from torch.hub on first run (needs network once).
+# Step4b needs the Whisper checkpoint in models/; see models/README.md.
+
+# Section 3 - required by Stage 1: cohort check, splits, evaluation and the encoder baselines
+# (Step1c, Step7, Step8). Also uses librosa, scikit-learn, torch, pandas, numpy and PyYAML from above.
+transformers==5.17.0            # Step8: Whisper, mHuBERT, mGTE, BERT checkpoints
+praatio==6.2.2                  # Step8 pause_bert: reads the TextGrids written by MFA
+# Montreal Forced Aligner is NOT a pip dependency: it is installed with conda, see
+# src/Step8_Encoders/pause_bert/02_run_mfa.md.
+# Alibaba-NLP/gte-multilingual-base is loaded with trust_remote_code=True and may need further
+# packages; that was not verified because the model was not loaded.
+
+# Section 4 - imported by archived code only (archive/dead_code/, archive/set_aside_after_review/)
+xgboost==3.3.0                  # nested_cv_hyperparam_xgb.py, ensembles.py
+mutagen==1.47.0                 # audio_duration_summary.py
