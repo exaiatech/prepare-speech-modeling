@@ -14,7 +14,7 @@ The current analysis cohort comprises **1,031 English Cookie Theft picture-descr
 
 The broader research objective is to compare **interpretable acoustic and linguistic biomarkers**, **learned speech representations**, and **hybrid models** under a common evaluation framework, assessing their contributions to classification performance and model interpretability.
 
-[Explore the repository](https://github.com/exaiatech/prepare-speech-modeling) · [PREPARE Challenge](https://www.drivendata.org/competitions/group/nih-nia-alzheimers-adrd-competition/) · [DementiaBank](https://talkbank.org/dementia/)
+[PREPARE Challenge](https://www.drivendata.org/competitions/group/nih-nia-alzheimers-adrd-competition/) · [DementiaBank](https://talkbank.org/dementia/)
 
 </td>
 </tr>
