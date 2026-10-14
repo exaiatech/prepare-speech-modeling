@@ -1,3 +1,33 @@
+<table>
+<tr>
+<td>
+
+## PREPARE: Speech Preprocessing and Exploratory Biomarker Analysis
+
+**Project overview · Exaia Technologies**
+
+This project investigates **speech-derived indicators of cognitive impairment** using recordings from the **PREPARE Challenge**, an initiative of the **NIH National Institute on Aging** hosted by DrivenData. The challenge’s acoustic track examines computational approaches to identifying Alzheimer’s disease and related dementias from speech, with an emphasis on predictive performance and explainability. The underlying speech corpora are available through **[DementiaBank](https://talkbank.org/dementia/)**, subject to its research access requirements.
+
+Developed in collaboration with **Ada**, a research student participating in **RWTH Aachen University’s UROP International programme**, the project establishes a documented Python workflow for dataset preparation, speech preprocessing, and initial analyses.
+
+The current analysis cohort comprises **1,031 English Cookie Theft picture-description recordings**, spanning cognitively healthy controls, mild cognitive impairment, and Alzheimer’s disease or related dementias. The workflow integrates cohort verification, audio preprocessing, acoustic and fluency feature extraction, descriptive statistical analysis, Whisper-based transcription, transcription-error assessment, and initial speech-encoder baseline evaluation.
+
+The broader research objective is to compare **interpretable acoustic and linguistic biomarkers**, **learned speech representations**, and **hybrid models** under a common evaluation framework, assessing their contributions to classification performance and model interpretability.
+
+[Explore the repository](https://github.com/exaiatech/prepare-speech-modeling) · [PREPARE Challenge](https://www.drivendata.org/competitions/group/nih-nia-alzheimers-adrd-competition/) · [DementiaBank](https://talkbank.org/dementia/)
+
+</td>
+</tr>
+</table>
+
+---
+
+## Technical Documentation
+
+*The following documentation describes the implementation, workflow, and development status of the student research project.*
+
+
+
 # Speech Biomarkers of Cognitive Impairment (PREPARE Cookie Theft cohort)
 
 Research internship project (UROP International, Exaia Technologies). Supervisor: Daniel Wiechmann.
